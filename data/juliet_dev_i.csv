@@ -1,0 +1,563 @@
+sentence,label
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE
+"import testcasesupport.*;
+",CWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.ArrayList;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.ArrayList;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashSet;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.ArrayList;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashSet;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashSet;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.ArrayList;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.util.HashMap;
+",CWE789
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",CWE89
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import javax.xml.xpath.*;
+import org.xml.sax.InputSource;
+import org.apache.commons.lang.StringEscapeUtils;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import java.util.logging.Level;
+",NoCWE
+"import testcasesupport.*;
+",NoCWE

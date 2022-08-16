@@ -17,6 +17,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -28,7 +29,7 @@ public class Main {
 
     public static void main(String[] args) throws URISyntaxException, IOException, CsvException {
 
-        String datasetName = "owasp";
+        String datasetName = "juliet";
 
         getImportOnlyCsv(getSamplesFromCSV(datasetName + "/train.csv"), datasetName + "_train_i.csv");
         getImportOnlyCsv(getSamplesFromCSV(datasetName + "/dev.csv"), datasetName + "_dev_i.csv");
@@ -161,7 +162,7 @@ public class Main {
         ICsvBeanWriter beanWriter = null;
         try
         {
-            beanWriter = new CsvBeanWriter(new FileWriter(fileName), CsvPreference.STANDARD_PREFERENCE);
+            beanWriter = new CsvBeanWriter(new FileWriter("data" + FileSystems.getDefault().getSeparator() + fileName), CsvPreference.STANDARD_PREFERENCE);
             final String[] header = new String[] { "sentence", "label", };
 
             // write the header

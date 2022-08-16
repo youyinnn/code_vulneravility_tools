@@ -1,0 +1,3216 @@
+sentence,label
+"package testcases.CWE23_Relative_Path_Traversal;
+
+public class CWE23_Relative_Path_Traversal__database_81_bad extends CWE23_Relative_Path_Traversal__database_81_base {
+
+    public void action(String data) throws Throwable {
+        String root;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            root = ""C:\\uploads\\"";
+        } else {
+            root = ""/home/user/uploads/"";
+        }
+        if (data != null) {
+            File file = new File(root + data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__database_81_bad extends CWE36_Absolute_Path_Traversal__database_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__Environment_81_bad extends CWE36_Absolute_Path_Traversal__Environment_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__PropertiesFile_81_bad extends CWE36_Absolute_Path_Traversal__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__console_readLine_81_bad extends CWE36_Absolute_Path_Traversal__console_readLine_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__connect_tcp_81_bad extends CWE36_Absolute_Path_Traversal__connect_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__File_81_bad extends CWE36_Absolute_Path_Traversal__File_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__Property_81_bad extends CWE36_Absolute_Path_Traversal__Property_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__URLConnection_81_bad extends CWE36_Absolute_Path_Traversal__URLConnection_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__listen_tcp_81_bad extends CWE36_Absolute_Path_Traversal__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE36_Absolute_Path_Traversal;
+
+public class CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__console_readLine_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__console_readLine_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__Environment_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__Environment_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__File_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__File_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__URLConnection_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__URLConnection_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__Property_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__Property_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__database_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__database_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+
+public class CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases.CWE500_Public_Static_Field_Not_Final;
+
+public class CWE500_Public_Static_Field_Not_Final__String_01_bad extends AbstractTestCaseClassIssueBad implements Cloneable {
+
+    public static String DEFAULT_ERROR = ""The value you entered was not understood.  Please try again."";
+
+    public void bad() {
+        IO.writeLine(DEFAULT_ERROR);
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        mainFromParent(args);
+    }
+}
+",CWE
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_base {
+
+    public void action(int data) throws Throwable {
+        ArrayList intArrayList = new ArrayList(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        ArrayList intArrayList = new ArrayList(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_base {
+
+    public void action(int data) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashSet intHashSet = new HashSet(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_base {
+
+    public void action(int data) throws Throwable {
+        ArrayList intArrayList = new ArrayList(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashSet intHashSet = new HashSet(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_base {
+
+    public void action(int data) throws Throwable {
+        HashSet intHashSet = new HashSet(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__max_value_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__max_value_ArrayList_81_base {
+
+    public void action(int data) throws Throwable {
+        ArrayList intArrayList = new ArrayList(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_base {
+
+    public void action(int data) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+
+public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_base {
+
+    public void action(int data) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeQuery_81_bad extends CWE89_SQL_Injection__File_executeQuery_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            String[] names = data.split(""-"");
+            int successCount = 0;
+            Connection dbConnection = null;
+            Statement sqlStatement = null;
+            try {
+                dbConnection = IO.getDBConnection();
+                sqlStatement = dbConnection.createStatement();
+                for (int i = 0; i < names.length; i++) {
+                    sqlStatement.addBatch(""update users set hitcount=hitcount+1 where name='"" + names[i] + ""'"");
+                }
+                int[] resultsArray = sqlStatement.executeBatch();
+                for (int i = 0; i < names.length; i++) {
+                    if (resultsArray[i] > 0) {
+                        successCount++;
+                    }
+                }
+                IO.writeLine(""Succeeded in "" + successCount + "" out of "" + names.length + "" queries."");
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+            } finally {
+                try {
+                    if (sqlStatement != null) {
+                        sqlStatement.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Statament"", exceptSql);
+                }
+                try {
+                    if (dbConnection != null) {
+                        dbConnection.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+                }
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_prepareStatement_81_bad extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_bad extends CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeUpdate_81_bad extends CWE89_SQL_Injection__File_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            int rowCount = sqlStatement.executeUpdate(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_execute_81_bad extends CWE89_SQL_Injection__File_execute_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            Boolean result = sqlStatement.execute(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_executeQuery_81_bad extends CWE89_SQL_Injection__Environment_executeQuery_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_bad extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            String[] names = data.split(""-"");
+            int successCount = 0;
+            Connection dbConnection = null;
+            Statement sqlStatement = null;
+            try {
+                dbConnection = IO.getDBConnection();
+                sqlStatement = dbConnection.createStatement();
+                for (int i = 0; i < names.length; i++) {
+                    sqlStatement.addBatch(""update users set hitcount=hitcount+1 where name='"" + names[i] + ""'"");
+                }
+                int[] resultsArray = sqlStatement.executeBatch();
+                for (int i = 0; i < names.length; i++) {
+                    if (resultsArray[i] > 0) {
+                        successCount++;
+                    }
+                }
+                IO.writeLine(""Succeeded in "" + successCount + "" out of "" + names.length + "" queries."");
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+            } finally {
+                try {
+                    if (sqlStatement != null) {
+                        sqlStatement.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Statament"", exceptSql);
+                }
+                try {
+                    if (dbConnection != null) {
+                        dbConnection.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+                }
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_execute_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_execute_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            Boolean result = sqlStatement.execute(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE89
+"package testcases.CWE566_Authorization_Bypass_Through_SQL_Primary;
+
+public class CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B extends CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dBConnection = IO.getDBConnection();
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        int id = 0;
+        try {
+            id = Integer.parseInt(data);
+        } catch (NumberFormatException nfx) {
+            id = -1;
+        }
+        try {
+            preparedStatement = dBConnection.prepareStatement(""select * from invoices where uid=?"");
+            preparedStatement.setInt(1, id);
+            resultSet = preparedStatement.executeQuery();
+            IO.writeString(""bad() - result requested: "" + data + ""\n"");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error executing query"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Could not close ResultSet"", exceptSql);
+            }
+            try {
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Could not close PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dBConnection != null) {
+                    dBConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Could not close Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__Property_81_goodB2G extends CWE643_Xpath_Injection__Property_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__PropertiesFile_81_goodB2G extends CWE643_Xpath_Injection__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__connect_tcp_81_goodB2G extends CWE643_Xpath_Injection__connect_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__database_81_goodG2B extends CWE643_Xpath_Injection__database_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__console_readLine_81_goodB2G extends CWE643_Xpath_Injection__console_readLine_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__Environment_81_goodB2G extends CWE643_Xpath_Injection__Environment_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__URLConnection_81_goodB2G extends CWE643_Xpath_Injection__URLConnection_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__URLConnection_81_goodG2B extends CWE643_Xpath_Injection__URLConnection_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__console_readLine_81_goodG2B extends CWE643_Xpath_Injection__console_readLine_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__PropertiesFile_81_goodG2B extends CWE643_Xpath_Injection__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__File_81_goodB2G extends CWE643_Xpath_Injection__File_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__listen_tcp_81_goodG2B extends CWE643_Xpath_Injection__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__File_81_goodG2B extends CWE643_Xpath_Injection__File_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__database_81_goodB2G extends CWE643_Xpath_Injection__database_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__Property_81_goodG2B extends CWE643_Xpath_Injection__Property_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__Environment_81_goodG2B extends CWE643_Xpath_Injection__Environment_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__listen_tcp_81_goodB2G extends CWE643_Xpath_Injection__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = StringEscapeUtils.escapeXml(tokens[0]);
+            String password = StringEscapeUtils.escapeXml(tokens[1]);
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE643_Xpath_Injection;
+
+public class CWE643_Xpath_Injection__connect_tcp_81_goodG2B extends CWE643_Xpath_Injection__connect_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        String xmlFile = null;
+        if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
+            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+        } else {
+            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+        }
+        if (data != null) {
+            String[] tokens = data.split(""||"");
+            if (tokens.length < 2) {
+                return;
+            }
+            String username = tokens[0];
+            String password = tokens[1];
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            InputSource inputXml = new InputSource(xmlFile);
+            String query = ""//users/user[name/text()='"" + username + ""' and pass/text()='"" + password + ""']"" + ""/secret/text()"";
+            String secret = (String) xPath.evaluate(query, inputXml, XPathConstants.STRING);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_File_81_goodG2B extends CWE601_Open_Redirect__Servlet_File_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_PropertiesFile_81_goodG2B extends CWE601_Open_Redirect__Servlet_PropertiesFile_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_connect_tcp_81_goodG2B extends CWE601_Open_Redirect__Servlet_connect_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_database_81_goodG2B extends CWE601_Open_Redirect__Servlet_database_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_URLConnection_81_goodG2B extends CWE601_Open_Redirect__Servlet_URLConnection_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_listen_tcp_81_goodG2B extends CWE601_Open_Redirect__Servlet_listen_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_getQueryString_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE601_Open_Redirect;
+
+public class CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_File_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_File_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_URLConnection_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_URLConnection_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_connect_tcp_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_connect_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_database_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_database_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_PropertiesFile_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_PropertiesFile_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE81_XSS_Error_Message;
+
+public class CWE81_XSS_Error_Message__Servlet_listen_tcp_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_listen_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            String[] names = data.split(""-"");
+            int successCount = 0;
+            Connection dbConnection = null;
+            PreparedStatement sqlStatement = null;
+            try {
+                dbConnection = IO.getDBConnection();
+                sqlStatement = dbConnection.prepareStatement(""update users set hitcount=hitcount+1 where name=?"");
+                for (int i = 0; i < names.length; i++) {
+                    sqlStatement.setString(1, names[i]);
+                    sqlStatement.addBatch();
+                }
+                int[] resultsArray = sqlStatement.executeBatch();
+                for (int i = 0; i < names.length; i++) {
+                    if (resultsArray[i] > 0) {
+                        successCount++;
+                    }
+                }
+                IO.writeLine(""Succeeded in "" + successCount + "" out of "" + names.length + "" queries."");
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+            } finally {
+                try {
+                    if (sqlStatement != null) {
+                        sqlStatement.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+                }
+                try {
+                    if (dbConnection != null) {
+                        dbConnection.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+                }
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__Environment_prepareStatement_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_execute_81_goodG2B extends CWE89_SQL_Injection__Environment_execute_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            Boolean result = sqlStatement.execute(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G extends CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""select * from users where name=?"");
+            sqlStatement.setString(1, data);
+            resultSet = sqlStatement.executeQuery();
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B extends CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_execute_81_goodB2G extends CWE89_SQL_Injection__File_execute_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__File_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            int rowCount = sqlStatement.executeUpdate();
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__Environment_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            int rowCount = sqlStatement.executeUpdate();
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_execute_81_goodB2G extends CWE89_SQL_Injection__Environment_execute_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            int rowCount = sqlStatement.executeUpdate();
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            String[] names = data.split(""-"");
+            int successCount = 0;
+            Connection dbConnection = null;
+            Statement sqlStatement = null;
+            try {
+                dbConnection = IO.getDBConnection();
+                sqlStatement = dbConnection.createStatement();
+                for (int i = 0; i < names.length; i++) {
+                    sqlStatement.addBatch(""update users set hitcount=hitcount+1 where name='"" + names[i] + ""'"");
+                }
+                int[] resultsArray = sqlStatement.executeBatch();
+                for (int i = 0; i < names.length; i++) {
+                    if (resultsArray[i] > 0) {
+                        successCount++;
+                    }
+                }
+                IO.writeLine(""Succeeded in "" + successCount + "" out of "" + names.length + "" queries."");
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+            } finally {
+                try {
+                    if (sqlStatement != null) {
+                        sqlStatement.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Statament"", exceptSql);
+                }
+                try {
+                    if (dbConnection != null) {
+                        dbConnection.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+                }
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_executeQuery_81_goodG2B extends CWE89_SQL_Injection__Environment_executeQuery_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeBatch_81_goodG2B extends CWE89_SQL_Injection__File_executeBatch_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            String[] names = data.split(""-"");
+            int successCount = 0;
+            Connection dbConnection = null;
+            Statement sqlStatement = null;
+            try {
+                dbConnection = IO.getDBConnection();
+                sqlStatement = dbConnection.createStatement();
+                for (int i = 0; i < names.length; i++) {
+                    sqlStatement.addBatch(""update users set hitcount=hitcount+1 where name='"" + names[i] + ""'"");
+                }
+                int[] resultsArray = sqlStatement.executeBatch();
+                for (int i = 0; i < names.length; i++) {
+                    if (resultsArray[i] > 0) {
+                        successCount++;
+                    }
+                }
+                IO.writeLine(""Succeeded in "" + successCount + "" out of "" + names.length + "" queries."");
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+            } finally {
+                try {
+                    if (sqlStatement != null) {
+                        sqlStatement.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Statament"", exceptSql);
+                }
+                try {
+                    if (dbConnection != null) {
+                        dbConnection.close();
+                    }
+                } catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+                }
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeUpdate_81_goodG2B extends CWE89_SQL_Injection__File_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            int rowCount = sqlStatement.executeUpdate(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__Environment_prepareStatement_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            Boolean result = sqlStatement.execute();
+            if (result) {
+                IO.writeLine(""Name, "" + data + "", updated successfully"");
+            } else {
+                IO.writeLine(""Unable to update records for user: "" + data);
+            }
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__File_executeQuery_81_goodG2B extends CWE89_SQL_Injection__File_executeQuery_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            resultSet = sqlStatement.executeQuery(""select * from users where name='"" + data + ""'"");
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        ResultSet resultSet = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""select * from users where name=?"");
+            sqlStatement.setString(1, data);
+            resultSet = sqlStatement.executeQuery();
+            IO.writeLine(resultSet.getRow());
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing ResultSet"", exceptSql);
+            }
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE89_SQL_Injection.s02;
+
+public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodG2B extends CWE89_SQL_Injection__Environment_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        Statement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.createStatement();
+            int rowCount = sqlStatement.executeUpdate(""insert into users (status) values ('updated') where name='"" + data + ""'"");
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Statement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases.CWE500_Public_Static_Field_Not_Final;
+
+public class CWE500_Public_Static_Field_Not_Final__String_01_good1 extends AbstractTestCaseClassIssueGood implements Cloneable {
+
+    public static final String DEFAULT_ERROR = ""The value you entered was not understood.  Please try again."";
+
+    private void good1() {
+        IO.writeLine(DEFAULT_ERROR);
+    }
+
+    public void good() {
+        good1();
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        mainFromParent(args);
+    }
+}
+",NoCWE
