@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE36_Absolute_Path_Traversal</name></name>;</package>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.8"><package>package <name><name>testcases</name><operator>.</operator><name>CWE36_Absolute_Path_Traversal</name></name>;</package>
 
 <import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
 <import>import <name><name>java</name><operator>.</operator><name>io</name><operator>.</operator><name>*</name></name>;</import>
@@ -49,5 +49,4 @@
         </block_content>}</block></if></if_stmt>
     </block_content>}</block></function>
 }</block></class>
-
 </unit>

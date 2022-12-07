@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE500_Public_Static_Field_Not_Final</name></name>;</package>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.25"><package>package <name><name>testcases</name><operator>.</operator><name>CWE500_Public_Static_Field_Not_Final</name></name>;</package>
 
 <import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
 
@@ -15,5 +15,4 @@
         <expr_stmt><expr><call><name>mainFromParent</name><argument_list>(<argument><expr><name>args</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
     </block_content>}</block></function>
 }</block></class>
-
 </unit>

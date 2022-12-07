@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE566_Authorization_Bypass_Through_SQL_Primary</name></name>;</package>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.49"><package>package <name><name>testcases</name><operator>.</operator><name>CWE566_Authorization_Bypass_Through_SQL_Primary</name></name>;</package>
 
 <import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
 <import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
@@ -22,8 +22,7 @@
             <expr_stmt><expr><name>preparedStatement</name> <operator>=</operator> <call><name><name>dBConnection</name><operator>.</operator><name>prepareStatement</name></name><argument_list>(<argument><expr><literal type="string">"select * from invoices where uid=?"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
             <expr_stmt><expr><call><name><name>preparedStatement</name><operator>.</operator><name>setInt</name></name><argument_list>(<argument><expr><literal type="number">1</literal></expr></argument>, <argument><expr><name>id</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
             <expr_stmt><expr><name>resultSet</name> <operator>=</operator> <call><name><name>preparedStatement</name><operator>.</operator><name>executeQuery</name></name><argument_list>()</argument_list></call></expr>;</expr_stmt>
-            <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>writeString</name></name><argument_list>(<argument><expr><literal type="string">"bad() - result requested: "</literal> <operator>+</operator> <name>data</name> <operator>+</operator> <literal type="string">"
-"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+            <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>writeString</name></name><argument_list>(<argument><expr><literal type="string">"bad() - result requested: "</literal> <operator>+</operator> <name>data</name> <operator>+</operator> <literal type="string">"\n"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
         </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>SQLException</name></type> <name>exceptSql</name></decl></parameter>)</parameter_list> <block>{<block_content>
             <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>logger</name><operator>.</operator><name>log</name></name><argument_list>(<argument><expr><name><name>Level</name><operator>.</operator><name>WARNING</name></name></expr></argument>, <argument><expr><literal type="string">"Error executing query"</literal></expr></argument>, <argument><expr><name>exceptSql</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
         </block_content>}</block></catch> <finally>finally <block>{<block_content>
@@ -51,5 +50,4 @@
         </block_content>}</block></finally></try>
     </block_content>}</block></function>
 }</block></class>
-
 </unit>

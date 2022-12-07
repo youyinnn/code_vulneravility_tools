@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE89_SQL_Injection</name><operator>.</operator><name>s02</name></name>;</package>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.97"><package>package <name><name>testcases</name><operator>.</operator><name>CWE89_SQL_Injection</name><operator>.</operator><name>s02</name></name>;</package>
 
 <import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
 <import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
@@ -45,5 +45,4 @@
         </block_content>}</block></finally></try>
     </block_content>}</block></function>
 }</block></class>
-
 </unit>

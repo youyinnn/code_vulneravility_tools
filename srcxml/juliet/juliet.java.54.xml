@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE643_Xpath_Injection</name></name>;</package>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.54"><package>package <name><name>testcases</name><operator>.</operator><name>CWE643_Xpath_Injection</name></name>;</package>
 
 <import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
 <import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
@@ -12,7 +12,7 @@
     <function><type><specifier>public</specifier> <name>void</name></type> <name>action</name><parameter_list>(<parameter><decl><type><name>String</name></type> <name>data</name></decl></parameter>, <parameter><decl><type><name>HttpServletRequest</name></type> <name>request</name></decl></parameter>, <parameter><decl><type><name>HttpServletResponse</name></type> <name>response</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>Throwable</name></expr></argument></throws> <block>{<block_content>
         <decl_stmt><decl><type><name>String</name></type> <name>xmlFile</name> <init>= <expr><literal type="null">null</literal></expr></init></decl>;</decl_stmt>
         <if_stmt><if>if <condition>(<expr><call><name><name>System</name><operator>.</operator><name>getProperty</name></name><argument_list>(<argument><expr><literal type="string">"os.name"</literal></expr></argument>)</argument_list></call><operator>.</operator><call><name>toLowerCase</name><argument_list>()</argument_list></call><operator>.</operator><call><name>indexOf</name><argument_list>(<argument><expr><literal type="string">"win"</literal></expr></argument>)</argument_list></call> <operator>&gt;=</operator> <literal type="number">0</literal></expr>)</condition> <block>{<block_content>
-            <expr_stmt><expr><name>xmlFile</name> <operator>=</operator> <literal type="string">"\src	estcases\CWE643_Xpath Injection\CWE643_Xpath_Injection__Helper.xml"</literal></expr>;</expr_stmt>
+            <expr_stmt><expr><name>xmlFile</name> <operator>=</operator> <literal type="string">"\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"</literal></expr>;</expr_stmt>
         </block_content>}</block></if> <else>else <block>{<block_content>
             <expr_stmt><expr><name>xmlFile</name> <operator>=</operator> <literal type="string">"./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"</literal></expr>;</expr_stmt>
         </block_content>}</block></else></if_stmt>
@@ -30,5 +30,4 @@
         </block_content>}</block></if></if_stmt>
     </block_content>}</block></function>
 }</block></class>
-
 </unit>
