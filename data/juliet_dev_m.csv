@@ -1,7 +1,7 @@
 sentence,label
-"package testcases.CWE23_Relative_Path_Traversal;
+"package testcases._Relative_Path_Traversal;
 
-public class CWE23_Relative_Path_Traversal__database_81_bad extends CWE23_Relative_Path_Traversal__database_81_base {
+public class _Relative_Path_Traversal__database_81_bad extends _Relative_Path_Traversal__database_81_base {
 
     public void action(String data) throws Throwable {
         String root;
@@ -51,55 +51,9 @@ public class CWE23_Relative_Path_Traversal__database_81_bad extends CWE23_Relati
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__database_81_bad extends CWE36_Absolute_Path_Traversal__database_81_base {
-
-    public void action(String data) throws Throwable {
-        if (data != null) {
-            File file = new File(data);
-            FileInputStream streamFileInputSink = null;
-            InputStreamReader readerInputStreamSink = null;
-            BufferedReader readerBufferdSink = null;
-            if (file.exists() && file.isFile()) {
-                try {
-                    streamFileInputSink = new FileInputStream(file);
-                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
-                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
-                    IO.writeLine(readerBufferdSink.readLine());
-                } catch (IOException exceptIO) {
-                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
-                } finally {
-                    try {
-                        if (readerBufferdSink != null) {
-                            readerBufferdSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
-                    }
-                    try {
-                        if (readerInputStreamSink != null) {
-                            readerInputStreamSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
-                    }
-                    try {
-                        if (streamFileInputSink != null) {
-                            streamFileInputSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
-                    }
-                }
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
-
-public class CWE36_Absolute_Path_Traversal__Environment_81_bad extends CWE36_Absolute_Path_Traversal__Environment_81_base {
+public class _Absolute_Path_Traversal__database_81_bad extends _Absolute_Path_Traversal__database_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -143,55 +97,9 @@ public class CWE36_Absolute_Path_Traversal__Environment_81_bad extends CWE36_Abs
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__PropertiesFile_81_bad extends CWE36_Absolute_Path_Traversal__PropertiesFile_81_base {
-
-    public void action(String data) throws Throwable {
-        if (data != null) {
-            File file = new File(data);
-            FileInputStream streamFileInputSink = null;
-            InputStreamReader readerInputStreamSink = null;
-            BufferedReader readerBufferdSink = null;
-            if (file.exists() && file.isFile()) {
-                try {
-                    streamFileInputSink = new FileInputStream(file);
-                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
-                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
-                    IO.writeLine(readerBufferdSink.readLine());
-                } catch (IOException exceptIO) {
-                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
-                } finally {
-                    try {
-                        if (readerBufferdSink != null) {
-                            readerBufferdSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
-                    }
-                    try {
-                        if (readerInputStreamSink != null) {
-                            readerInputStreamSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
-                    }
-                    try {
-                        if (streamFileInputSink != null) {
-                            streamFileInputSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
-                    }
-                }
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
-
-public class CWE36_Absolute_Path_Traversal__console_readLine_81_bad extends CWE36_Absolute_Path_Traversal__console_readLine_81_base {
+public class _Absolute_Path_Traversal__Environment_81_bad extends _Absolute_Path_Traversal__Environment_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -235,9 +143,101 @@ public class CWE36_Absolute_Path_Traversal__console_readLine_81_bad extends CWE3
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_base {
+public class _Absolute_Path_Traversal__PropertiesFile_81_bad extends _Absolute_Path_Traversal__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases._Absolute_Path_Traversal;
+
+public class _Absolute_Path_Traversal__console_readLine_81_bad extends _Absolute_Path_Traversal__console_readLine_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases._Absolute_Path_Traversal;
+
+public class _Absolute_Path_Traversal__getQueryString_Servlet_81_bad extends _Absolute_Path_Traversal__getQueryString_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -281,9 +281,9 @@ public class CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_bad extend
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__connect_tcp_81_bad extends CWE36_Absolute_Path_Traversal__connect_tcp_81_base {
+public class _Absolute_Path_Traversal__connect_tcp_81_bad extends _Absolute_Path_Traversal__connect_tcp_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -327,9 +327,9 @@ public class CWE36_Absolute_Path_Traversal__connect_tcp_81_bad extends CWE36_Abs
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_base {
+public class _Absolute_Path_Traversal__getParameter_Servlet_81_bad extends _Absolute_Path_Traversal__getParameter_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -373,55 +373,9 @@ public class CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_bad extends 
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__File_81_bad extends CWE36_Absolute_Path_Traversal__File_81_base {
-
-    public void action(String data) throws Throwable {
-        if (data != null) {
-            File file = new File(data);
-            FileInputStream streamFileInputSink = null;
-            InputStreamReader readerInputStreamSink = null;
-            BufferedReader readerBufferdSink = null;
-            if (file.exists() && file.isFile()) {
-                try {
-                    streamFileInputSink = new FileInputStream(file);
-                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
-                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
-                    IO.writeLine(readerBufferdSink.readLine());
-                } catch (IOException exceptIO) {
-                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
-                } finally {
-                    try {
-                        if (readerBufferdSink != null) {
-                            readerBufferdSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
-                    }
-                    try {
-                        if (readerInputStreamSink != null) {
-                            readerInputStreamSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
-                    }
-                    try {
-                        if (streamFileInputSink != null) {
-                            streamFileInputSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
-                    }
-                }
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
-
-public class CWE36_Absolute_Path_Traversal__Property_81_bad extends CWE36_Absolute_Path_Traversal__Property_81_base {
+public class _Absolute_Path_Traversal__File_81_bad extends _Absolute_Path_Traversal__File_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -465,55 +419,9 @@ public class CWE36_Absolute_Path_Traversal__Property_81_bad extends CWE36_Absolu
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__URLConnection_81_bad extends CWE36_Absolute_Path_Traversal__URLConnection_81_base {
-
-    public void action(String data) throws Throwable {
-        if (data != null) {
-            File file = new File(data);
-            FileInputStream streamFileInputSink = null;
-            InputStreamReader readerInputStreamSink = null;
-            BufferedReader readerBufferdSink = null;
-            if (file.exists() && file.isFile()) {
-                try {
-                    streamFileInputSink = new FileInputStream(file);
-                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
-                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
-                    IO.writeLine(readerBufferdSink.readLine());
-                } catch (IOException exceptIO) {
-                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
-                } finally {
-                    try {
-                        if (readerBufferdSink != null) {
-                            readerBufferdSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
-                    }
-                    try {
-                        if (readerInputStreamSink != null) {
-                            readerInputStreamSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
-                    }
-                    try {
-                        if (streamFileInputSink != null) {
-                            streamFileInputSink.close();
-                        }
-                    } catch (IOException exceptIO) {
-                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
-                    }
-                }
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
-
-public class CWE36_Absolute_Path_Traversal__listen_tcp_81_bad extends CWE36_Absolute_Path_Traversal__listen_tcp_81_base {
+public class _Absolute_Path_Traversal__Property_81_bad extends _Absolute_Path_Traversal__Property_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -557,9 +465,101 @@ public class CWE36_Absolute_Path_Traversal__listen_tcp_81_bad extends CWE36_Abso
     }
 }
 ",CWE
-"package testcases.CWE36_Absolute_Path_Traversal;
+"package testcases._Absolute_Path_Traversal;
 
-public class CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_bad extends CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_base {
+public class _Absolute_Path_Traversal__URLConnection_81_bad extends _Absolute_Path_Traversal__URLConnection_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases._Absolute_Path_Traversal;
+
+public class _Absolute_Path_Traversal__listen_tcp_81_bad extends _Absolute_Path_Traversal__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        if (data != null) {
+            File file = new File(data);
+            FileInputStream streamFileInputSink = null;
+            InputStreamReader readerInputStreamSink = null;
+            BufferedReader readerBufferdSink = null;
+            if (file.exists() && file.isFile()) {
+                try {
+                    streamFileInputSink = new FileInputStream(file);
+                    readerInputStreamSink = new InputStreamReader(streamFileInputSink, ""UTF-8"");
+                    readerBufferdSink = new BufferedReader(readerInputStreamSink);
+                    IO.writeLine(readerBufferdSink.readLine());
+                } catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, ""Error with stream reading"", exceptIO);
+                } finally {
+                    try {
+                        if (readerBufferdSink != null) {
+                            readerBufferdSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing BufferedReader"", exceptIO);
+                    }
+                    try {
+                        if (readerInputStreamSink != null) {
+                            readerInputStreamSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing InputStreamReader"", exceptIO);
+                    }
+                    try {
+                        if (streamFileInputSink != null) {
+                            streamFileInputSink.close();
+                        }
+                    } catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, ""Error closing FileInputStream"", exceptIO);
+                    }
+                }
+            }
+        }
+    }
+}
+",CWE
+"package testcases._Absolute_Path_Traversal;
+
+public class _Absolute_Path_Traversal__getCookies_Servlet_81_bad extends _Absolute_Path_Traversal__getCookies_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -603,32 +603,9 @@ public class CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_bad extends CW
     }
 }
 ",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE15_External_Control_of_System_or_Configuration_Setting__console_readLine_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__console_readLine_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__Environment_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__Environment_81_base {
+public class _External_Control_of_System_or_Configuration_Setting__console_readLine_81_bad extends _External_Control_of_System_or_Configuration_Setting__console_readLine_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -649,9 +626,32 @@ public class CWE15_External_Control_of_System_or_Configuration_Setting__Environm
     }
 }
 ",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_base {
+public class _External_Control_of_System_or_Configuration_Setting__Environment_81_bad extends _External_Control_of_System_or_Configuration_Setting__Environment_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_bad extends _External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -672,101 +672,9 @@ public class CWE15_External_Control_of_System_or_Configuration_Setting__getQuery
     }
 }
 ",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__File_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__File_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__URLConnection_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__URLConnection_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_base {
+public class _External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_bad extends _External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -787,32 +695,9 @@ public class CWE15_External_Control_of_System_or_Configuration_Setting__getParam
     }
 }
 ",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE15_External_Control_of_System_or_Configuration_Setting__Property_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__Property_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__database_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__database_81_base {
+public class _External_Control_of_System_or_Configuration_Setting__File_81_bad extends _External_Control_of_System_or_Configuration_Setting__File_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -833,32 +718,9 @@ public class CWE15_External_Control_of_System_or_Configuration_Setting__database
     }
 }
 ",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            dbConnection.setCatalog(data);
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",CWE
-"package testcases.CWE15_External_Control_of_System_or_Configuration_Setting;
-
-public class CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_81_bad extends CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_81_base {
+public class _External_Control_of_System_or_Configuration_Setting__URLConnection_81_bad extends _External_Control_of_System_or_Configuration_Setting__URLConnection_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -879,9 +741,147 @@ public class CWE15_External_Control_of_System_or_Configuration_Setting__connect_
     }
 }
 ",CWE
-"package testcases.CWE500_Public_Static_Field_Not_Final;
+"package testcases._External_Control_of_System_or_Configuration_Setting;
 
-public class CWE500_Public_Static_Field_Not_Final__String_01_bad extends AbstractTestCaseClassIssueBad implements Cloneable {
+public class _External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_bad extends _External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_bad extends _External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__Property_81_bad extends _External_Control_of_System_or_Configuration_Setting__Property_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__database_81_bad extends _External_Control_of_System_or_Configuration_Setting__database_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__listen_tcp_81_bad extends _External_Control_of_System_or_Configuration_Setting__listen_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._External_Control_of_System_or_Configuration_Setting;
+
+public class _External_Control_of_System_or_Configuration_Setting__connect_tcp_81_bad extends _External_Control_of_System_or_Configuration_Setting__connect_tcp_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            dbConnection.setCatalog(data);
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",CWE
+"package testcases._Public_Static_Field_Not_Final;
+
+public class _Public_Static_Field_Not_Final__String_01_bad extends AbstractTestCaseClassIssueBad implements Cloneable {
 
     public static String DEFAULT_ERROR = ""The value you entered was not understood.  Please try again."";
 
@@ -894,126 +894,126 @@ public class CWE500_Public_Static_Field_Not_Final__String_01_bad extends Abstrac
     }
 }
 ",CWE
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_base {
+public class _Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_bad extends _Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_base {
 
     public void action(int data) throws Throwable {
         ArrayList intArrayList = new ArrayList(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_base {
+public class _Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_bad extends _Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_base {
 
     public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         ArrayList intArrayList = new ArrayList(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_base {
+public class _Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_base {
 
     public void action(int data) throws Throwable {
         HashMap intHashMap = new HashMap(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_base {
+public class _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_base {
 
     public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         HashMap intHashMap = new HashMap(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_base {
+public class _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_bad extends _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_base {
 
     public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         HashSet intHashSet = new HashSet(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_base {
-
-    public void action(int data) throws Throwable {
-        ArrayList intArrayList = new ArrayList(data);
-    }
-}
-",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
-
-public class CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_base {
-
-    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        HashMap intHashMap = new HashMap(data);
-    }
-}
-",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
-
-public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_base {
-
-    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        HashSet intHashSet = new HashSet(data);
-    }
-}
-",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
-
-public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_base {
-
-    public void action(int data) throws Throwable {
-        HashSet intHashSet = new HashSet(data);
-    }
-}
-",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
-
-public class CWE789_Uncontrolled_Mem_Alloc__max_value_ArrayList_81_bad extends CWE789_Uncontrolled_Mem_Alloc__max_value_ArrayList_81_base {
+public class _Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_bad extends _Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_base {
 
     public void action(int data) throws Throwable {
         ArrayList intArrayList = new ArrayList(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_base {
+public class _Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_base {
 
     public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         HashMap intHashMap = new HashMap(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_base {
+public class _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_bad extends _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashSet intHashSet = new HashSet(data);
+    }
+}
+",CWE789
+"package testcases._Uncontrolled_Mem_Alloc.s02;
+
+public class _Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_bad extends _Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_base {
+
+    public void action(int data) throws Throwable {
+        HashSet intHashSet = new HashSet(data);
+    }
+}
+",CWE789
+"package testcases._Uncontrolled_Mem_Alloc.s02;
+
+public class _Uncontrolled_Mem_Alloc__max_value_ArrayList_81_bad extends _Uncontrolled_Mem_Alloc__max_value_ArrayList_81_base {
+
+    public void action(int data) throws Throwable {
+        ArrayList intArrayList = new ArrayList(data);
+    }
+}
+",CWE789
+"package testcases._Uncontrolled_Mem_Alloc.s02;
+
+public class _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_base {
+
+    public void action(int data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        HashMap intHashMap = new HashMap(data);
+    }
+}
+",CWE789
+"package testcases._Uncontrolled_Mem_Alloc.s02;
+
+public class _Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__max_value_HashMap_81_base {
 
     public void action(int data) throws Throwable {
         HashMap intHashMap = new HashMap(data);
     }
 }
 ",CWE789
-"package testcases.CWE789_Uncontrolled_Mem_Alloc.s02;
+"package testcases._Uncontrolled_Mem_Alloc.s02;
 
-public class CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_bad extends CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_base {
+public class _Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_bad extends _Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_base {
 
     public void action(int data) throws Throwable {
         HashMap intHashMap = new HashMap(data);
     }
 }
 ",CWE789
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeQuery_81_bad extends CWE89_SQL_Injection__File_executeQuery_81_base {
+public class _SQL_Injection__File_executeQuery_81_bad extends _SQL_Injection__File_executeQuery_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -1052,9 +1052,9 @@ public class CWE89_SQL_Injection__File_executeQuery_81_bad extends CWE89_SQL_Inj
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_base {
+public class _SQL_Injection__getCookies_Servlet_executeBatch_81_bad extends _SQL_Injection__getCookies_Servlet_executeBatch_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -1097,9 +1097,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_bad extends
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_prepareStatement_81_bad extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+public class _SQL_Injection__File_prepareStatement_81_bad extends _SQL_Injection__File_prepareStatement_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -1134,9 +1134,9 @@ public class CWE89_SQL_Injection__File_prepareStatement_81_bad extends CWE89_SQL
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_bad extends CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_base {
+public class _SQL_Injection__getParameter_Servlet_executeQuery_81_bad extends _SQL_Injection__getParameter_Servlet_executeQuery_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -1175,9 +1175,9 @@ public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_bad exten
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeUpdate_81_bad extends CWE89_SQL_Injection__File_executeUpdate_81_base {
+public class _SQL_Injection__File_executeUpdate_81_bad extends _SQL_Injection__File_executeUpdate_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -1208,9 +1208,9 @@ public class CWE89_SQL_Injection__File_executeUpdate_81_bad extends CWE89_SQL_In
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_execute_81_bad extends CWE89_SQL_Injection__File_execute_81_base {
+public class _SQL_Injection__File_execute_81_bad extends _SQL_Injection__File_execute_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -1245,9 +1245,9 @@ public class CWE89_SQL_Injection__File_execute_81_bad extends CWE89_SQL_Injectio
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_executeQuery_81_bad extends CWE89_SQL_Injection__Environment_executeQuery_81_base {
+public class _SQL_Injection__Environment_executeQuery_81_bad extends _SQL_Injection__Environment_executeQuery_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -1286,9 +1286,9 @@ public class CWE89_SQL_Injection__Environment_executeQuery_81_bad extends CWE89_
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_bad extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+public class _SQL_Injection__getParameter_Servlet_executeBatch_81_bad extends _SQL_Injection__getParameter_Servlet_executeBatch_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -1331,9 +1331,9 @@ public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_bad exten
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+public class _SQL_Injection__getCookies_Servlet_prepareStatement_81_bad extends _SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -1368,9 +1368,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_bad ext
     }
 }
 ",CWE89
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_execute_81_bad extends CWE89_SQL_Injection__getCookies_Servlet_execute_81_base {
+public class _SQL_Injection__getCookies_Servlet_execute_81_bad extends _SQL_Injection__getCookies_Servlet_execute_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -1405,9 +1405,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_execute_81_bad extends CWE8
     }
 }
 ",CWE89
-"package testcases.CWE566_Authorization_Bypass_Through_SQL_Primary;
+"package testcases._Authorization_Bypass_Through_SQL_Primary;
 
-public class CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B extends CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_base {
+public class _Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B extends _Authorization_Bypass_Through_SQL_Primary__Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dBConnection = IO.getDBConnection();
@@ -1452,16 +1452,16 @@ public class CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__Property_81_goodB2G extends CWE643_Xpath_Injection__Property_81_base {
+public class _Xpath_Injection__Property_81_goodB2G extends _Xpath_Injection__Property_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1478,16 +1478,16 @@ public class CWE643_Xpath_Injection__Property_81_goodB2G extends CWE643_Xpath_In
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__PropertiesFile_81_goodB2G extends CWE643_Xpath_Injection__PropertiesFile_81_base {
+public class _Xpath_Injection__PropertiesFile_81_goodB2G extends _Xpath_Injection__PropertiesFile_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1504,16 +1504,16 @@ public class CWE643_Xpath_Injection__PropertiesFile_81_goodB2G extends CWE643_Xp
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__connect_tcp_81_goodB2G extends CWE643_Xpath_Injection__connect_tcp_81_base {
+public class _Xpath_Injection__connect_tcp_81_goodB2G extends _Xpath_Injection__connect_tcp_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1530,16 +1530,16 @@ public class CWE643_Xpath_Injection__connect_tcp_81_goodB2G extends CWE643_Xpath
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__database_81_goodG2B extends CWE643_Xpath_Injection__database_81_base {
+public class _Xpath_Injection__database_81_goodG2B extends _Xpath_Injection__database_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1556,16 +1556,16 @@ public class CWE643_Xpath_Injection__database_81_goodG2B extends CWE643_Xpath_In
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getQueryString_Servlet_81_base {
+public class _Xpath_Injection__getQueryString_Servlet_81_goodB2G extends _Xpath_Injection__getQueryString_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1582,16 +1582,16 @@ public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodB2G extends C
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__console_readLine_81_goodB2G extends CWE643_Xpath_Injection__console_readLine_81_base {
+public class _Xpath_Injection__console_readLine_81_goodB2G extends _Xpath_Injection__console_readLine_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1608,16 +1608,16 @@ public class CWE643_Xpath_Injection__console_readLine_81_goodB2G extends CWE643_
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getCookies_Servlet_81_base {
+public class _Xpath_Injection__getCookies_Servlet_81_goodB2G extends _Xpath_Injection__getCookies_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1634,16 +1634,16 @@ public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodB2G extends CWE64
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__Environment_81_goodB2G extends CWE643_Xpath_Injection__Environment_81_base {
+public class _Xpath_Injection__Environment_81_goodB2G extends _Xpath_Injection__Environment_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1660,16 +1660,16 @@ public class CWE643_Xpath_Injection__Environment_81_goodB2G extends CWE643_Xpath
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodB2G extends CWE643_Xpath_Injection__getParameter_Servlet_81_base {
+public class _Xpath_Injection__getParameter_Servlet_81_goodB2G extends _Xpath_Injection__getParameter_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1686,16 +1686,16 @@ public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodB2G extends CWE
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getQueryString_Servlet_81_base {
+public class _Xpath_Injection__getQueryString_Servlet_81_goodG2B extends _Xpath_Injection__getQueryString_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1712,16 +1712,16 @@ public class CWE643_Xpath_Injection__getQueryString_Servlet_81_goodG2B extends C
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__URLConnection_81_goodB2G extends CWE643_Xpath_Injection__URLConnection_81_base {
+public class _Xpath_Injection__URLConnection_81_goodB2G extends _Xpath_Injection__URLConnection_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1738,16 +1738,16 @@ public class CWE643_Xpath_Injection__URLConnection_81_goodB2G extends CWE643_Xpa
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getCookies_Servlet_81_base {
+public class _Xpath_Injection__getCookies_Servlet_81_goodG2B extends _Xpath_Injection__getCookies_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1764,16 +1764,16 @@ public class CWE643_Xpath_Injection__getCookies_Servlet_81_goodG2B extends CWE64
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__URLConnection_81_goodG2B extends CWE643_Xpath_Injection__URLConnection_81_base {
+public class _Xpath_Injection__URLConnection_81_goodG2B extends _Xpath_Injection__URLConnection_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1790,16 +1790,16 @@ public class CWE643_Xpath_Injection__URLConnection_81_goodG2B extends CWE643_Xpa
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__console_readLine_81_goodG2B extends CWE643_Xpath_Injection__console_readLine_81_base {
+public class _Xpath_Injection__console_readLine_81_goodG2B extends _Xpath_Injection__console_readLine_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1816,16 +1816,16 @@ public class CWE643_Xpath_Injection__console_readLine_81_goodG2B extends CWE643_
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__PropertiesFile_81_goodG2B extends CWE643_Xpath_Injection__PropertiesFile_81_base {
+public class _Xpath_Injection__PropertiesFile_81_goodG2B extends _Xpath_Injection__PropertiesFile_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1842,16 +1842,16 @@ public class CWE643_Xpath_Injection__PropertiesFile_81_goodG2B extends CWE643_Xp
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__File_81_goodB2G extends CWE643_Xpath_Injection__File_81_base {
+public class _Xpath_Injection__File_81_goodB2G extends _Xpath_Injection__File_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1868,16 +1868,16 @@ public class CWE643_Xpath_Injection__File_81_goodB2G extends CWE643_Xpath_Inject
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__listen_tcp_81_goodG2B extends CWE643_Xpath_Injection__listen_tcp_81_base {
+public class _Xpath_Injection__listen_tcp_81_goodG2B extends _Xpath_Injection__listen_tcp_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1894,16 +1894,16 @@ public class CWE643_Xpath_Injection__listen_tcp_81_goodG2B extends CWE643_Xpath_
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__File_81_goodG2B extends CWE643_Xpath_Injection__File_81_base {
+public class _Xpath_Injection__File_81_goodG2B extends _Xpath_Injection__File_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1920,16 +1920,16 @@ public class CWE643_Xpath_Injection__File_81_goodG2B extends CWE643_Xpath_Inject
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__database_81_goodB2G extends CWE643_Xpath_Injection__database_81_base {
+public class _Xpath_Injection__database_81_goodB2G extends _Xpath_Injection__database_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1946,16 +1946,16 @@ public class CWE643_Xpath_Injection__database_81_goodB2G extends CWE643_Xpath_In
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodG2B extends CWE643_Xpath_Injection__getParameter_Servlet_81_base {
+public class _Xpath_Injection__getParameter_Servlet_81_goodG2B extends _Xpath_Injection__getParameter_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1972,16 +1972,16 @@ public class CWE643_Xpath_Injection__getParameter_Servlet_81_goodG2B extends CWE
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__Property_81_goodG2B extends CWE643_Xpath_Injection__Property_81_base {
+public class _Xpath_Injection__Property_81_goodG2B extends _Xpath_Injection__Property_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -1998,16 +1998,16 @@ public class CWE643_Xpath_Injection__Property_81_goodG2B extends CWE643_Xpath_In
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__Environment_81_goodG2B extends CWE643_Xpath_Injection__Environment_81_base {
+public class _Xpath_Injection__Environment_81_goodG2B extends _Xpath_Injection__Environment_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -2024,16 +2024,16 @@ public class CWE643_Xpath_Injection__Environment_81_goodG2B extends CWE643_Xpath
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__listen_tcp_81_goodB2G extends CWE643_Xpath_Injection__listen_tcp_81_base {
+public class _Xpath_Injection__listen_tcp_81_goodB2G extends _Xpath_Injection__listen_tcp_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -2050,16 +2050,16 @@ public class CWE643_Xpath_Injection__listen_tcp_81_goodB2G extends CWE643_Xpath_
     }
 }
 ",NoCWE
-"package testcases.CWE643_Xpath_Injection;
+"package testcases._Xpath_Injection;
 
-public class CWE643_Xpath_Injection__connect_tcp_81_goodG2B extends CWE643_Xpath_Injection__connect_tcp_81_base {
+public class _Xpath_Injection__connect_tcp_81_goodG2B extends _Xpath_Injection__connect_tcp_81_base {
 
     public void action(String data) throws Throwable {
         String xmlFile = null;
         if (System.getProperty(""os.name"").toLowerCase().indexOf(""win"") >= 0) {
-            xmlFile = ""\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""\\src\\testcases\\_Xpath Injection\\_Xpath_Injection__Helper.xml"";
         } else {
-            xmlFile = ""./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"";
+            xmlFile = ""./src/testcases/_Xpath Injection/_Xpath_Injection__Helper.xml"";
         }
         if (data != null) {
             String[] tokens = data.split(""||"");
@@ -2076,9 +2076,9 @@ public class CWE643_Xpath_Injection__connect_tcp_81_goodG2B extends CWE643_Xpath
     }
 }
 ",NoCWE
-"package testcases.CWE601_Open_Redirect;
+"package testcases._Open_Redirect;
 
-public class CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_base {
+public class _Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B extends _Open_Redirect__Servlet_getParameter_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2095,28 +2095,9 @@ public class CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B exten
     }
 }
 ",NoCWE
-"package testcases.CWE601_Open_Redirect;
+"package testcases._Open_Redirect;
 
-public class CWE601_Open_Redirect__Servlet_File_81_goodG2B extends CWE601_Open_Redirect__Servlet_File_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            URI uri;
-            try {
-                uri = new URI(data);
-            } catch (URISyntaxException exceptURISyntax) {
-                response.getWriter().write(""Invalid redirect URL"");
-                return;
-            }
-            response.sendRedirect(data);
-            return;
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE601_Open_Redirect;
-
-public class CWE601_Open_Redirect__Servlet_PropertiesFile_81_goodG2B extends CWE601_Open_Redirect__Servlet_PropertiesFile_81_base {
+public class _Open_Redirect__Servlet_File_81_goodG2B extends _Open_Redirect__Servlet_File_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2133,28 +2114,9 @@ public class CWE601_Open_Redirect__Servlet_PropertiesFile_81_goodG2B extends CWE
     }
 }
 ",NoCWE
-"package testcases.CWE601_Open_Redirect;
+"package testcases._Open_Redirect;
 
-public class CWE601_Open_Redirect__Servlet_connect_tcp_81_goodG2B extends CWE601_Open_Redirect__Servlet_connect_tcp_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            URI uri;
-            try {
-                uri = new URI(data);
-            } catch (URISyntaxException exceptURISyntax) {
-                response.getWriter().write(""Invalid redirect URL"");
-                return;
-            }
-            response.sendRedirect(data);
-            return;
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE601_Open_Redirect;
-
-public class CWE601_Open_Redirect__Servlet_database_81_goodG2B extends CWE601_Open_Redirect__Servlet_database_81_base {
+public class _Open_Redirect__Servlet_PropertiesFile_81_goodG2B extends _Open_Redirect__Servlet_PropertiesFile_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2171,28 +2133,9 @@ public class CWE601_Open_Redirect__Servlet_database_81_goodG2B extends CWE601_Op
     }
 }
 ",NoCWE
-"package testcases.CWE601_Open_Redirect;
+"package testcases._Open_Redirect;
 
-public class CWE601_Open_Redirect__Servlet_URLConnection_81_goodG2B extends CWE601_Open_Redirect__Servlet_URLConnection_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            URI uri;
-            try {
-                uri = new URI(data);
-            } catch (URISyntaxException exceptURISyntax) {
-                response.getWriter().write(""Invalid redirect URL"");
-                return;
-            }
-            response.sendRedirect(data);
-            return;
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE601_Open_Redirect;
-
-public class CWE601_Open_Redirect__Servlet_listen_tcp_81_goodG2B extends CWE601_Open_Redirect__Servlet_listen_tcp_81_base {
+public class _Open_Redirect__Servlet_connect_tcp_81_goodG2B extends _Open_Redirect__Servlet_connect_tcp_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2209,28 +2152,9 @@ public class CWE601_Open_Redirect__Servlet_listen_tcp_81_goodG2B extends CWE601_
     }
 }
 ",NoCWE
-"package testcases.CWE601_Open_Redirect;
+"package testcases._Open_Redirect;
 
-public class CWE601_Open_Redirect__Servlet_getQueryString_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getQueryString_Servlet_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            URI uri;
-            try {
-                uri = new URI(data);
-            } catch (URISyntaxException exceptURISyntax) {
-                response.getWriter().write(""Invalid redirect URL"");
-                return;
-            }
-            response.sendRedirect(data);
-            return;
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE601_Open_Redirect;
-
-public class CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B extends CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_base {
+public class _Open_Redirect__Servlet_database_81_goodG2B extends _Open_Redirect__Servlet_database_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2247,9 +2171,85 @@ public class CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B extends
     }
 }
 ",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
+"package testcases._Open_Redirect;
 
-public class CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_base {
+public class _Open_Redirect__Servlet_URLConnection_81_goodG2B extends _Open_Redirect__Servlet_URLConnection_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases._Open_Redirect;
+
+public class _Open_Redirect__Servlet_listen_tcp_81_goodG2B extends _Open_Redirect__Servlet_listen_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases._Open_Redirect;
+
+public class _Open_Redirect__Servlet_getQueryString_Servlet_81_goodG2B extends _Open_Redirect__Servlet_getQueryString_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases._Open_Redirect;
+
+public class _Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B extends _Open_Redirect__Servlet_getCookies_Servlet_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            URI uri;
+            try {
+                uri = new URI(data);
+            } catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write(""Invalid redirect URL"");
+                return;
+            }
+            response.sendRedirect(data);
+            return;
+        }
+    }
+}
+",NoCWE
+"package testcases._XSS_Error_Message;
+
+public class _XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B extends _XSS_Error_Message__Servlet_getParameter_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2258,20 +2258,9 @@ public class CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B ex
     }
 }
 ",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
+"package testcases._XSS_Error_Message;
 
-public class CWE81_XSS_Error_Message__Servlet_File_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_File_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
-
-public class CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_base {
+public class _XSS_Error_Message__Servlet_File_81_goodG2B extends _XSS_Error_Message__Servlet_File_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2280,20 +2269,9 @@ public class CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B 
     }
 }
 ",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
+"package testcases._XSS_Error_Message;
 
-public class CWE81_XSS_Error_Message__Servlet_URLConnection_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_URLConnection_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
-
-public class CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_base {
+public class _XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B extends _XSS_Error_Message__Servlet_getQueryString_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2302,20 +2280,9 @@ public class CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B exte
     }
 }
 ",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
+"package testcases._XSS_Error_Message;
 
-public class CWE81_XSS_Error_Message__Servlet_connect_tcp_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_connect_tcp_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
-
-public class CWE81_XSS_Error_Message__Servlet_database_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_database_81_base {
+public class _XSS_Error_Message__Servlet_URLConnection_81_goodG2B extends _XSS_Error_Message__Servlet_URLConnection_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2324,20 +2291,9 @@ public class CWE81_XSS_Error_Message__Servlet_database_81_goodG2B extends CWE81_
     }
 }
 ",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
+"package testcases._XSS_Error_Message;
 
-public class CWE81_XSS_Error_Message__Servlet_PropertiesFile_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_PropertiesFile_81_base {
-
-    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
-        if (data != null) {
-            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE81_XSS_Error_Message;
-
-public class CWE81_XSS_Error_Message__Servlet_listen_tcp_81_goodG2B extends CWE81_XSS_Error_Message__Servlet_listen_tcp_81_base {
+public class _XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B extends _XSS_Error_Message__Servlet_getCookies_Servlet_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2346,9 +2302,53 @@ public class CWE81_XSS_Error_Message__Servlet_listen_tcp_81_goodG2B extends CWE8
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._XSS_Error_Message;
 
-public class CWE89_SQL_Injection__File_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+public class _XSS_Error_Message__Servlet_connect_tcp_81_goodG2B extends _XSS_Error_Message__Servlet_connect_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases._XSS_Error_Message;
+
+public class _XSS_Error_Message__Servlet_database_81_goodG2B extends _XSS_Error_Message__Servlet_database_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases._XSS_Error_Message;
+
+public class _XSS_Error_Message__Servlet_PropertiesFile_81_goodG2B extends _XSS_Error_Message__Servlet_PropertiesFile_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases._XSS_Error_Message;
+
+public class _XSS_Error_Message__Servlet_listen_tcp_81_goodG2B extends _XSS_Error_Message__Servlet_listen_tcp_81_base {
+
+    public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (data != null) {
+            response.sendError(404, ""<br>bad() - Parameter name has value "" + data);
+        }
+    }
+}
+",NoCWE
+"package testcases._SQL_Injection.s02;
+
+public class _SQL_Injection__File_prepareStatement_81_goodB2G extends _SQL_Injection__File_prepareStatement_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2384,9 +2384,9 @@ public class CWE89_SQL_Injection__File_prepareStatement_81_goodB2G extends CWE89
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+public class _SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B extends _SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -2421,9 +2421,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+public class _SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G extends _SQL_Injection__getParameter_Servlet_executeBatch_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2467,9 +2467,9 @@ public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G e
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__Environment_prepareStatement_81_base {
+public class _SQL_Injection__Environment_prepareStatement_81_goodG2B extends _SQL_Injection__Environment_prepareStatement_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2504,9 +2504,9 @@ public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodG2B extend
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_execute_81_goodG2B extends CWE89_SQL_Injection__Environment_execute_81_base {
+public class _SQL_Injection__Environment_execute_81_goodG2B extends _SQL_Injection__Environment_execute_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2541,9 +2541,9 @@ public class CWE89_SQL_Injection__Environment_execute_81_goodG2B extends CWE89_S
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G extends CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_base {
+public class _SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G extends _SQL_Injection__getParameter_Servlet_executeQuery_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -2583,9 +2583,9 @@ public class CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G e
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B extends CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_base {
+public class _SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B extends _SQL_Injection__getCookies_Servlet_executeQuery_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -2624,9 +2624,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B ext
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_execute_81_goodB2G extends CWE89_SQL_Injection__File_execute_81_base {
+public class _SQL_Injection__File_execute_81_goodB2G extends _SQL_Injection__File_execute_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2662,9 +2662,9 @@ public class CWE89_SQL_Injection__File_execute_81_goodB2G extends CWE89_SQL_Inje
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_prepareStatement_81_goodG2B extends CWE89_SQL_Injection__File_prepareStatement_81_base {
+public class _SQL_Injection__File_prepareStatement_81_goodG2B extends _SQL_Injection__File_prepareStatement_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2699,43 +2699,9 @@ public class CWE89_SQL_Injection__File_prepareStatement_81_goodG2B extends CWE89
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__File_executeUpdate_81_base {
-
-    public void action(String data) throws Throwable {
-        Connection dbConnection = null;
-        PreparedStatement sqlStatement = null;
-        try {
-            dbConnection = IO.getDBConnection();
-            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
-            sqlStatement.setString(1, data);
-            int rowCount = sqlStatement.executeUpdate();
-            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
-        } catch (SQLException exceptSql) {
-            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
-        } finally {
-            try {
-                if (sqlStatement != null) {
-                    sqlStatement.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
-            }
-            try {
-                if (dbConnection != null) {
-                    dbConnection.close();
-                }
-            } catch (SQLException exceptSql) {
-                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
-            }
-        }
-    }
-}
-",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
-
-public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__Environment_executeUpdate_81_base {
+public class _SQL_Injection__File_executeUpdate_81_goodB2G extends _SQL_Injection__File_executeUpdate_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2767,9 +2733,43 @@ public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodB2G extends C
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_execute_81_goodB2G extends CWE89_SQL_Injection__Environment_execute_81_base {
+public class _SQL_Injection__Environment_executeUpdate_81_goodB2G extends _SQL_Injection__Environment_executeUpdate_81_base {
+
+    public void action(String data) throws Throwable {
+        Connection dbConnection = null;
+        PreparedStatement sqlStatement = null;
+        try {
+            dbConnection = IO.getDBConnection();
+            sqlStatement = dbConnection.prepareStatement(""insert into users (status) values ('updated') where name=?"");
+            sqlStatement.setString(1, data);
+            int rowCount = sqlStatement.executeUpdate();
+            IO.writeLine(""Updated "" + rowCount + "" rows successfully."");
+        } catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, ""Error getting database connection"", exceptSql);
+        } finally {
+            try {
+                if (sqlStatement != null) {
+                    sqlStatement.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing PreparedStatement"", exceptSql);
+            }
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            } catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, ""Error closing Connection"", exceptSql);
+            }
+        }
+    }
+}
+",NoCWE
+"package testcases._SQL_Injection.s02;
+
+public class _SQL_Injection__Environment_execute_81_goodB2G extends _SQL_Injection__Environment_execute_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2805,9 +2805,9 @@ public class CWE89_SQL_Injection__Environment_execute_81_goodB2G extends CWE89_S
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_base {
+public class _SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G extends _SQL_Injection__getCookies_Servlet_executeUpdate_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -2839,9 +2839,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G ex
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B extends CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_base {
+public class _SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B extends _SQL_Injection__getParameter_Servlet_executeBatch_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         if (data != null) {
@@ -2884,9 +2884,9 @@ public class CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B e
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_executeQuery_81_goodG2B extends CWE89_SQL_Injection__Environment_executeQuery_81_base {
+public class _SQL_Injection__Environment_executeQuery_81_goodG2B extends _SQL_Injection__Environment_executeQuery_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -2925,9 +2925,9 @@ public class CWE89_SQL_Injection__Environment_executeQuery_81_goodG2B extends CW
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
+public class _SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G extends _SQL_Injection__getCookies_Servlet_prepareStatement_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -2963,9 +2963,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeBatch_81_goodG2B extends CWE89_SQL_Injection__File_executeBatch_81_base {
+public class _SQL_Injection__File_executeBatch_81_goodG2B extends _SQL_Injection__File_executeBatch_81_base {
 
     public void action(String data) throws Throwable {
         if (data != null) {
@@ -3008,9 +3008,9 @@ public class CWE89_SQL_Injection__File_executeBatch_81_goodG2B extends CWE89_SQL
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeUpdate_81_goodG2B extends CWE89_SQL_Injection__File_executeUpdate_81_base {
+public class _SQL_Injection__File_executeUpdate_81_goodG2B extends _SQL_Injection__File_executeUpdate_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -3041,9 +3041,9 @@ public class CWE89_SQL_Injection__File_executeUpdate_81_goodG2B extends CWE89_SQ
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodB2G extends CWE89_SQL_Injection__Environment_prepareStatement_81_base {
+public class _SQL_Injection__Environment_prepareStatement_81_goodB2G extends _SQL_Injection__Environment_prepareStatement_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -3079,9 +3079,9 @@ public class CWE89_SQL_Injection__Environment_prepareStatement_81_goodB2G extend
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__File_executeQuery_81_goodG2B extends CWE89_SQL_Injection__File_executeQuery_81_base {
+public class _SQL_Injection__File_executeQuery_81_goodG2B extends _SQL_Injection__File_executeQuery_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -3120,9 +3120,9 @@ public class CWE89_SQL_Injection__File_executeQuery_81_goodG2B extends CWE89_SQL
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G extends CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_base {
+public class _SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G extends _SQL_Injection__getCookies_Servlet_executeQuery_81_base {
 
     public void action(String data, HttpServletRequest request, HttpServletResponse response) throws Throwable {
         Connection dbConnection = null;
@@ -3162,9 +3162,9 @@ public class CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G ext
     }
 }
 ",NoCWE
-"package testcases.CWE89_SQL_Injection.s02;
+"package testcases._SQL_Injection.s02;
 
-public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodG2B extends CWE89_SQL_Injection__Environment_executeUpdate_81_base {
+public class _SQL_Injection__Environment_executeUpdate_81_goodG2B extends _SQL_Injection__Environment_executeUpdate_81_base {
 
     public void action(String data) throws Throwable {
         Connection dbConnection = null;
@@ -3195,9 +3195,9 @@ public class CWE89_SQL_Injection__Environment_executeUpdate_81_goodG2B extends C
     }
 }
 ",NoCWE
-"package testcases.CWE500_Public_Static_Field_Not_Final;
+"package testcases._Public_Static_Field_Not_Final;
 
-public class CWE500_Public_Static_Field_Not_Final__String_01_good1 extends AbstractTestCaseClassIssueGood implements Cloneable {
+public class _Public_Static_Field_Not_Final__String_01_good1 extends AbstractTestCaseClassIssueGood implements Cloneable {
 
     public static final String DEFAULT_ERROR = ""The value you entered was not understood.  Please try again."";
 

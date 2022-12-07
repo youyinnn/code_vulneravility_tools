@@ -48,6 +48,9 @@ public class Main {
 
         getImportAndCommentCsv(getSamplesFromCSV(datasetName + "/train.csv"), datasetName + "_train_ic.csv");
         getImportAndCommentCsv(getSamplesFromCSV(datasetName + "/dev.csv"), datasetName + "_dev_ic.csv");
+
+        writeCsv(getSamplesFromCSV(datasetName + "/train.csv"), datasetName + "_train_mic.csv");
+        writeCsv(getSamplesFromCSV(datasetName + "/dev.csv"), datasetName + "_dev_mic.csv");
     }
 
     private static void getCommentOnlyCsv(ArrayList<Sample> sa, String fileName) {
@@ -206,6 +209,10 @@ public class Main {
             while ((s = beanReader.read(Sample.class, headers)) != null) {
                 sa.add(s);
             }
+        }
+        for (Sample sample : sa) {
+            String code = sample.getSentence().replaceAll("CWE:? ?[\\d]{0,3}", "");
+            sample.setSentence(code);
         }
         return sa;
     }

@@ -1,7 +1,7 @@
 sentence,label
 "/*
  * @description
- * CWE: 23 Relative Path Traversal
+ *  Relative Path Traversal
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -14,14 +14,14 @@ sentence,label
 /* POTENTIAL FLAW: no validation of concatenated value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE23_Relative_Path_Traversal__database_81_bad.java
-Label Definition File: CWE23_Relative_Path_Traversal.label.xml
+Filename: _Relative_Path_Traversal__database_81_bad.java
+Label Definition File: _Relative_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -32,14 +32,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__database_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__database_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -50,14 +50,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__Environment_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__Environment_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -68,14 +68,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__PropertiesFile_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__PropertiesFile_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: console_readLine Read data from the console using readLine()
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -86,14 +86,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__console_readLine_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__console_readLine_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -104,14 +104,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__getQueryString_Servlet_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__getQueryString_Servlet_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -122,14 +122,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__connect_tcp_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__connect_tcp_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -140,14 +140,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__getParameter_Servlet_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__getParameter_Servlet_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -158,14 +158,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__File_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__File_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: Property Read data from a system property
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -176,14 +176,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__Property_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__Property_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -194,14 +194,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__URLConnection_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__URLConnection_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -212,14 +212,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__listen_tcp_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__listen_tcp_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 36 Absolute Path Traversal
+ *  Absolute Path Traversal
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: readFile
@@ -230,14 +230,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: unvalidated or sandboxed value */
 /* Close stream reading objects */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE36_Absolute_Path_Traversal__getCookies_Servlet_81_bad.java
-Label Definition File: CWE36_Absolute_Path_Traversal.label.xml
+Filename: _Absolute_Path_Traversal__getCookies_Servlet_81_bad.java
+Label Definition File: _Absolute_Path_Traversal.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: console_readLine Read data from the console using readLine()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -248,14 +248,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__console_readLine_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__console_readLine_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks:
@@ -266,14 +266,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__Environment_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__Environment_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks:
@@ -284,14 +284,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -302,14 +302,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -320,14 +320,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__File_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__File_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -338,14 +338,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__URLConnection_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__URLConnection_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -356,14 +356,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__PropertiesFile_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -374,14 +374,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: Property Read data from a system property
  * GoodSource: A hardcoded string
  * Sinks:
@@ -392,14 +392,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__Property_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__Property_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks:
@@ -410,14 +410,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__database_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__database_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -428,14 +428,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__listen_tcp_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
 "/*
  * @description
- * CWE: 15 External Control of System or Configuration Setting
+ *  External Control of System or Configuration Setting
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -446,8 +446,8 @@ Template File: sources-sink-81_bad.tmpl.java
 /* POTENTIAL FLAW: Set the catalog name with the value of data
              * allowing a nonexistent catalog name or unauthorized access to a portion of the DB */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_81_bad.java
-Label Definition File: CWE15_External_Control_of_System_or_Configuration_Setting.label.xml
+Filename: _External_Control_of_System_or_Configuration_Setting__connect_tcp_81_bad.java
+Label Definition File: _External_Control_of_System_or_Configuration_Setting.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE
@@ -468,7 +468,7 @@ Template File: sources-sink-81_bad.tmpl.java
 ",CWE
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: ArrayList
@@ -478,14 +478,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create an ArrayList using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: ArrayList
@@ -495,14 +495,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create an ArrayList using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -512,14 +512,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__PropertiesFile_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -529,14 +529,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashSet
@@ -546,14 +546,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashSet using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: ArrayList
@@ -563,14 +563,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create an ArrayList using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -580,14 +580,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashSet
@@ -597,14 +597,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashSet using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashSet
@@ -614,14 +614,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashSet using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__listen_tcp_HashSet_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: max_value Set data to a hardcoded value of Integer.MAX_VALUE
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: ArrayList
@@ -631,14 +631,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create an ArrayList using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__max_value_ArrayList_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__max_value_ArrayList_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -648,14 +648,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: max_value Set data to a hardcoded value of Integer.MAX_VALUE
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -665,14 +665,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 789 Uncontrolled Memory Allocation
+ *  Uncontrolled Memory Allocation
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded non-zero, non-min, non-max, even number
  * Sinks: HashMap
@@ -682,14 +682,14 @@ Template File: sources-sink-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: Create a HashMap using data as the initial size.  data may be very large, creating memory issues */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE789_Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_bad.java
-Label Definition File: CWE789_Uncontrolled_Mem_Alloc.int.label.xml
+Filename: _Uncontrolled_Mem_Alloc__listen_tcp_HashMap_81_bad.java
+Label Definition File: _Uncontrolled_Mem_Alloc.int.label.xml
 Template File: sources-sink-81_bad.tmpl.java
 */
 ",CWE789
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -701,14 +701,14 @@ Template File: sources-sink-81_bad.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeQuery_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeQuery_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: executeBatch
@@ -719,14 +719,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeBatch(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_executeBatch_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_executeBatch_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -737,14 +737,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in prepareStatement() call, which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_prepareStatement_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_prepareStatement_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -756,14 +756,14 @@ Template File: sources-sinks-81_bad.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getParameter_Servlet_executeQuery_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -774,14 +774,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeUpdate(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeUpdate_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeUpdate_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: execute
@@ -792,14 +792,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in execute(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_execute_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_execute_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -811,14 +811,14 @@ Template File: sources-sinks-81_bad.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_executeQuery_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_executeQuery_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: executeBatch
@@ -829,14 +829,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeBatch(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getParameter_Servlet_executeBatch_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -847,14 +847,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in prepareStatement() call, which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_prepareStatement_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: execute
@@ -865,14 +865,14 @@ Template File: sources-sinks-81_bad.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in execute(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_execute_81_bad.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_execute_81_bad.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_bad.tmpl.java
 */
 ",CWE89
 "/*
  * @description
- * CWE: 566 Authorization Bypass through SQL primary
+ *  Authorization Bypass through SQL primary
  * BadSource:  user id taken from url parameter
  * GoodSource: hardcoded user id
  * Sinks: writeConsole
@@ -883,14 +883,14 @@ Template File: sources-sinks-81_bad.tmpl.java
 /* Assuming this id does not exist */
 /* POTENTIAL FLAW: no check to see whether the user has privileges to view the data */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B.java
-Label Definition File: CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet.label.xml
+Filename: _Authorization_Bypass_Through_SQL_Primary__Servlet_81_goodG2B.java
+Label Definition File: _Authorization_Bypass_Through_SQL_Primary__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: Property Read data from a system property
  * GoodSource: A hardcoded string
  * Sinks:
@@ -905,14 +905,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__Property_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__Property_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -927,14 +927,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__PropertiesFile_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__PropertiesFile_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -949,14 +949,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__connect_tcp_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__connect_tcp_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks:
@@ -967,20 +967,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__database_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__database_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks:
@@ -995,14 +995,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getQueryString_Servlet_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getQueryString_Servlet_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: console_readLine Read data from the console using readLine()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1017,14 +1017,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__console_readLine_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__console_readLine_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1039,14 +1039,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getCookies_Servlet_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getCookies_Servlet_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1061,14 +1061,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__Environment_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__Environment_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1083,14 +1083,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getParameter_Servlet_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getParameter_Servlet_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1101,20 +1101,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getQueryString_Servlet_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getQueryString_Servlet_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1129,14 +1129,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__URLConnection_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__URLConnection_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1147,20 +1147,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getCookies_Servlet_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getCookies_Servlet_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1171,20 +1171,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__URLConnection_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__URLConnection_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: console_readLine Read data from the console using readLine()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1195,20 +1195,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__console_readLine_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__console_readLine_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1219,20 +1219,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__PropertiesFile_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__PropertiesFile_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1247,14 +1247,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__File_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__File_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1265,20 +1265,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__listen_tcp_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__listen_tcp_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1289,20 +1289,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__File_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__File_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1317,14 +1317,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__database_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__database_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1335,20 +1335,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__getParameter_Servlet_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__getParameter_Servlet_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: Property Read data from a system property
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1359,20 +1359,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__Property_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__Property_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1383,20 +1383,20 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__Environment_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__Environment_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1411,14 +1411,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* FIX: validate input using StringEscapeUtils */
 /* build xpath */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__listen_tcp_81_goodB2G.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__listen_tcp_81_goodB2G.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 643 Xpath Injection
+ *  Xpath Injection
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1429,20 +1429,20 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* running on Windows */
 /* running on non-Windows */
-/* INCIDENTAL: CWE180 Incorrect Behavior Order: Validate Before Canonicalize
+/* INCIDENTAL:  Incorrect Behavior Order: Validate Before Canonicalize
              *     The user input should be canonicalized before validation. */
 /* assume username||password as source */
 /* build xpath */
 /* POTENTIAL FLAW: user input is used without validate */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE643_Xpath_Injection__connect_tcp_81_goodG2B.java
-Label Definition File: CWE643_Xpath_Injection.label.xml
+Filename: _Xpath_Injection__connect_tcp_81_goodG2B.java
+Label Definition File: _Xpath_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1455,14 +1455,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_getParameter_Servlet_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1475,14 +1475,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_File_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_File_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1495,14 +1495,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_PropertiesFile_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_PropertiesFile_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1515,14 +1515,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_connect_tcp_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_connect_tcp_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1535,14 +1535,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_database_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_database_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1555,14 +1555,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_URLConnection_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_URLConnection_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1575,14 +1575,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_listen_tcp_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_listen_tcp_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1595,14 +1595,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_getQueryString_Servlet_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_getQueryString_Servlet_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 601 Open Redirect
+ *  Open Redirect
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks:
@@ -1615,14 +1615,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
              */
 /* POTENTIAL FLAW: redirect is sent verbatim; escape the string to prevent ancillary issues like XSS, Response splitting etc */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE601_Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B.java
-Label Definition File: CWE601_Open_Redirect__Servlet.label.xml
+Filename: _Open_Redirect__Servlet_getCookies_Servlet_81_goodG2B.java
+Label Definition File: _Open_Redirect__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1635,14 +1635,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_getParameter_Servlet_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1655,14 +1655,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_File_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_File_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: getQueryString_Servlet Parse id param out of the URL query string (without using getParameter())
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1675,14 +1675,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_getQueryString_Servlet_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: URLConnection Read data from a web server with URLConnection
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1695,14 +1695,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_URLConnection_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_URLConnection_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1715,14 +1715,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_getCookies_Servlet_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: connect_tcp Read data using an outbound tcp connection
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1735,14 +1735,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_connect_tcp_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_connect_tcp_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: database Read data from a database
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1755,14 +1755,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_database_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_database_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: PropertiesFile Read data from a .properties file (in property named data)
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1775,14 +1775,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_PropertiesFile_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_PropertiesFile_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 81 Cross Site Scripting (XSS) in Error Message
+ *  Cross Site Scripting (XSS) in Error Message
  * BadSource: listen_tcp Read data using a listening tcp connection
  * GoodSource: A hardcoded string
  * Sinks: sendErrorServlet
@@ -1795,14 +1795,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
             * Therefore, to test this, change response.sendError to response.getWriter().println and remove the 404,
             */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE81_XSS_Error_Message__Servlet_listen_tcp_81_goodG2B.java
-Label Definition File: CWE81_XSS_Error_Message__Servlet.label.xml
+Filename: _XSS_Error_Message__Servlet_listen_tcp_81_goodG2B.java
+Label Definition File: _XSS_Error_Message__Servlet.label.xml
 Template File: sources-sink-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -1813,14 +1813,14 @@ Template File: sources-sink-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and execute (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_prepareStatement_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_prepareStatement_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -1831,14 +1831,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in prepareStatement() call, which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_prepareStatement_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: executeBatch
@@ -1849,14 +1849,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and executeBatch (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getParameter_Servlet_executeBatch_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -1867,14 +1867,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in prepareStatement() call, which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_prepareStatement_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_prepareStatement_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: execute
@@ -1885,14 +1885,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in execute(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_execute_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_execute_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -1904,14 +1904,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* Use ResultSet in some way */
 /* FIX: Use prepared statement and executeQuery (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getParameter_Servlet_executeQuery_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -1923,14 +1923,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_executeQuery_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: execute
@@ -1941,14 +1941,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and execute (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_execute_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_execute_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -1959,14 +1959,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in prepareStatement() call, which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_prepareStatement_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_prepareStatement_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -1977,14 +1977,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and executeUpdate (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeUpdate_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeUpdate_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -1995,14 +1995,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* FIX: Use prepared statement and executeUpdate (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_executeUpdate_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_executeUpdate_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: execute
@@ -2013,14 +2013,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* FIX: Use prepared statement and execute (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_execute_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_execute_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -2031,14 +2031,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* FIX: Use prepared statement and executeUpdate (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_executeUpdate_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getParameter_Servlet Read data from a querystring using getParameter()
  * GoodSource: A hardcoded string
  * Sinks: executeBatch
@@ -2049,14 +2049,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeBatch(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getParameter_Servlet_executeBatch_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -2068,14 +2068,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_executeQuery_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_executeQuery_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -2086,14 +2086,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and execute (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_prepareStatement_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeBatch
@@ -2104,14 +2104,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeBatch(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeBatch_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeBatch_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -2122,14 +2122,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeUpdate(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeUpdate_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeUpdate_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: prepareStatement
@@ -2140,14 +2140,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
  * */
 /* FIX: Use prepared statement and execute (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_prepareStatement_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_prepareStatement_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: File Read data from file (named c:\data.txt)
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -2159,14 +2159,14 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
 /* Use ResultSet in some way */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeQuery(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__File_executeQuery_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__File_executeQuery_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: getCookies_Servlet Read data from the first cookie using getCookies()
  * GoodSource: A hardcoded string
  * Sinks: executeQuery
@@ -2178,14 +2178,14 @@ Template File: sources-sinks-81_goodG2B.tmpl.java
 /* Use ResultSet in some way */
 /* FIX: Use prepared statement and executeQuery (properly) */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__getCookies_Servlet_executeQuery_81_goodB2G.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodB2G.tmpl.java
 */
 ",NoCWE
 "/*
  * @description
- * CWE: 89 SQL Injection
+ *  SQL Injection
  * BadSource: Environment Read data from an environment variable
  * GoodSource: A hardcoded string
  * Sinks: executeUpdate
@@ -2196,8 +2196,8 @@ Template File: sources-sinks-81_goodB2G.tmpl.java
  * */
 /* POTENTIAL FLAW: data concatenated into SQL statement used in executeUpdate(), which could result in SQL Injection */
 /* TEMPLATE GENERATED TESTCASE FILE
-Filename: CWE89_SQL_Injection__Environment_executeUpdate_81_goodG2B.java
-Label Definition File: CWE89_SQL_Injection.label.xml
+Filename: _SQL_Injection__Environment_executeUpdate_81_goodG2B.java
+Label Definition File: _SQL_Injection.label.xml
 Template File: sources-sinks-81_goodG2B.tmpl.java
 */
 ",NoCWE
