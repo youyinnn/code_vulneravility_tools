@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE601_Open_Redirect</name></name>;</package>
+
+<import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>java</name><operator>.</operator><name>net</name><operator>.</operator><name>URI</name></name>;</import>
+<import>import <name><name>java</name><operator>.</operator><name>net</name><operator>.</operator><name>URISyntaxException</name></name>;</import>
+
+<class><specifier>public</specifier> class <name>CWE601_Open_Redirect__Servlet_database_81_goodG2B</name> <super_list><extends>extends <super><name>CWE601_Open_Redirect__Servlet_database_81_base</name></super></extends></super_list> <block>{
+
+    <function><type><specifier>public</specifier> <name>void</name></type> <name>action</name><parameter_list>(<parameter><decl><type><name>String</name></type> <name>data</name></decl></parameter>, <parameter><decl><type><name>HttpServletRequest</name></type> <name>request</name></decl></parameter>, <parameter><decl><type><name>HttpServletResponse</name></type> <name>response</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>Throwable</name></expr></argument></throws> <block>{<block_content>
+        <if_stmt><if>if <condition>(<expr><name>data</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+            <decl_stmt><decl><type><name>URI</name></type> <name>uri</name></decl>;</decl_stmt>
+            <try>try <block>{<block_content>
+                <expr_stmt><expr><name>uri</name> <operator>=</operator> <operator>new</operator> <call><name>URI</name><argument_list>(<argument><expr><name>data</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+            </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>URISyntaxException</name></type> <name>exceptURISyntax</name></decl></parameter>)</parameter_list> <block>{<block_content>
+                <expr_stmt><expr><call><name><name>response</name><operator>.</operator><name>getWriter</name></name><argument_list>()</argument_list></call><operator>.</operator><call><name>write</name><argument_list>(<argument><expr><literal type="string">"Invalid redirect URL"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                <return>return;</return>
+            </block_content>}</block></catch></try>
+            <expr_stmt><expr><call><name><name>response</name><operator>.</operator><name>sendRedirect</name></name><argument_list>(<argument><expr><name>data</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+            <return>return;</return>
+        </block_content>}</block></if></if_stmt>
+    </block_content>}</block></function>
+}</block></class>
+
+</unit>

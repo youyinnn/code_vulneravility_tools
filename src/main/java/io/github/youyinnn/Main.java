@@ -29,7 +29,7 @@ public class Main {
 
     public static void main(String[] args) throws URISyntaxException, IOException, CsvException {
 
-        String datasetName = "juliet";
+        String datasetName = "owasp";
 
         getImportOnlyCsv(getSamplesFromCSV(datasetName + "/train.csv"), datasetName + "_train_i.csv");
         getImportOnlyCsv(getSamplesFromCSV(datasetName + "/dev.csv"), datasetName + "_dev_i.csv");
@@ -165,7 +165,7 @@ public class Main {
         ICsvBeanWriter beanWriter = null;
         try
         {
-            beanWriter = new CsvBeanWriter(new FileWriter("data" + FileSystems.getDefault().getSeparator() + fileName), CsvPreference.STANDARD_PREFERENCE);
+            beanWriter = new CsvBeanWriter(new FileWriter("data_without_removed_cwe" + FileSystems.getDefault().getSeparator() + fileName), CsvPreference.STANDARD_PREFERENCE);
             final String[] header = new String[] { "sentence", "label", };
 
             // write the header
@@ -211,7 +211,8 @@ public class Main {
             }
         }
         for (Sample sample : sa) {
-            String code = sample.getSentence().replaceAll("CWE:? ?[\\d]{0,3}", "");
+            // String code = sample.getSentence().replaceAll("CWE:? ?[\\d]{0,3}", "");
+            String code = sample.getSentence();
             sample.setSentence(code);
         }
         return sa;

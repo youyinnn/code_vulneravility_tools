@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE36_Absolute_Path_Traversal</name></name>;</package>
+
+<import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>java</name><operator>.</operator><name>io</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>java</name><operator>.</operator><name>util</name><operator>.</operator><name>logging</name><operator>.</operator><name>Level</name></name>;</import>
+
+<class><specifier>public</specifier> class <name>CWE36_Absolute_Path_Traversal__console_readLine_81_bad</name> <super_list><extends>extends <super><name>CWE36_Absolute_Path_Traversal__console_readLine_81_base</name></super></extends></super_list> <block>{
+
+    <function><type><specifier>public</specifier> <name>void</name></type> <name>action</name><parameter_list>(<parameter><decl><type><name>String</name></type> <name>data</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>Throwable</name></expr></argument></throws> <block>{<block_content>
+        <if_stmt><if>if <condition>(<expr><name>data</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+            <decl_stmt><decl><type><name>File</name></type> <name>file</name> <init>= <expr><operator>new</operator> <call><name>File</name><argument_list>(<argument><expr><name>data</name></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>FileInputStream</name></type> <name>streamFileInputSink</name> <init>= <expr><literal type="null">null</literal></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>InputStreamReader</name></type> <name>readerInputStreamSink</name> <init>= <expr><literal type="null">null</literal></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>BufferedReader</name></type> <name>readerBufferdSink</name> <init>= <expr><literal type="null">null</literal></expr></init></decl>;</decl_stmt>
+            <if_stmt><if>if <condition>(<expr><call><name><name>file</name><operator>.</operator><name>exists</name></name><argument_list>()</argument_list></call> <operator>&amp;&amp;</operator> <call><name><name>file</name><operator>.</operator><name>isFile</name></name><argument_list>()</argument_list></call></expr>)</condition> <block>{<block_content>
+                <try>try <block>{<block_content>
+                    <expr_stmt><expr><name>streamFileInputSink</name> <operator>=</operator> <operator>new</operator> <call><name>FileInputStream</name><argument_list>(<argument><expr><name>file</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    <expr_stmt><expr><name>readerInputStreamSink</name> <operator>=</operator> <operator>new</operator> <call><name>InputStreamReader</name><argument_list>(<argument><expr><name>streamFileInputSink</name></expr></argument>, <argument><expr><literal type="string">"UTF-8"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    <expr_stmt><expr><name>readerBufferdSink</name> <operator>=</operator> <operator>new</operator> <call><name>BufferedReader</name><argument_list>(<argument><expr><name>readerInputStreamSink</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>writeLine</name></name><argument_list>(<argument><expr><call><name><name>readerBufferdSink</name><operator>.</operator><name>readLine</name></name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>IOException</name></type> <name>exceptIO</name></decl></parameter>)</parameter_list> <block>{<block_content>
+                    <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>logger</name><operator>.</operator><name>log</name></name><argument_list>(<argument><expr><name><name>Level</name><operator>.</operator><name>WARNING</name></name></expr></argument>, <argument><expr><literal type="string">"Error with stream reading"</literal></expr></argument>, <argument><expr><name>exceptIO</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                </block_content>}</block></catch> <finally>finally <block>{<block_content>
+                    <try>try <block>{<block_content>
+                        <if_stmt><if>if <condition>(<expr><name>readerBufferdSink</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+                            <expr_stmt><expr><call><name><name>readerBufferdSink</name><operator>.</operator><name>close</name></name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+                        </block_content>}</block></if></if_stmt>
+                    </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>IOException</name></type> <name>exceptIO</name></decl></parameter>)</parameter_list> <block>{<block_content>
+                        <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>logger</name><operator>.</operator><name>log</name></name><argument_list>(<argument><expr><name><name>Level</name><operator>.</operator><name>WARNING</name></name></expr></argument>, <argument><expr><literal type="string">"Error closing BufferedReader"</literal></expr></argument>, <argument><expr><name>exceptIO</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    </block_content>}</block></catch></try>
+                    <try>try <block>{<block_content>
+                        <if_stmt><if>if <condition>(<expr><name>readerInputStreamSink</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+                            <expr_stmt><expr><call><name><name>readerInputStreamSink</name><operator>.</operator><name>close</name></name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+                        </block_content>}</block></if></if_stmt>
+                    </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>IOException</name></type> <name>exceptIO</name></decl></parameter>)</parameter_list> <block>{<block_content>
+                        <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>logger</name><operator>.</operator><name>log</name></name><argument_list>(<argument><expr><name><name>Level</name><operator>.</operator><name>WARNING</name></name></expr></argument>, <argument><expr><literal type="string">"Error closing InputStreamReader"</literal></expr></argument>, <argument><expr><name>exceptIO</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    </block_content>}</block></catch></try>
+                    <try>try <block>{<block_content>
+                        <if_stmt><if>if <condition>(<expr><name>streamFileInputSink</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+                            <expr_stmt><expr><call><name><name>streamFileInputSink</name><operator>.</operator><name>close</name></name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+                        </block_content>}</block></if></if_stmt>
+                    </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name>IOException</name></type> <name>exceptIO</name></decl></parameter>)</parameter_list> <block>{<block_content>
+                        <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>logger</name><operator>.</operator><name>log</name></name><argument_list>(<argument><expr><name><name>Level</name><operator>.</operator><name>WARNING</name></name></expr></argument>, <argument><expr><literal type="string">"Error closing FileInputStream"</literal></expr></argument>, <argument><expr><name>exceptIO</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                    </block_content>}</block></catch></try>
+                </block_content>}</block></finally></try>
+            </block_content>}</block></if></if_stmt>
+        </block_content>}</block></if></if_stmt>
+    </block_content>}</block></function>
+}</block></class>
+
+</unit>

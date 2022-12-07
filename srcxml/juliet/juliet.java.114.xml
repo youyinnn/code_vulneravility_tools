@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE500_Public_Static_Field_Not_Final</name></name>;</package>
+
+<import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
+
+<class><specifier>public</specifier> class <name>CWE500_Public_Static_Field_Not_Final__String_01_good1</name> <super_list><extends>extends <super><name>AbstractTestCaseClassIssueGood</name></super></extends> <implements>implements <super><name>Cloneable</name></super></implements></super_list> <block>{
+
+    <decl_stmt><decl><type><specifier>public</specifier> <specifier>static</specifier> <specifier>final</specifier> <name>String</name></type> <name>DEFAULT_ERROR</name> <init>= <expr><literal type="string">"The value you entered was not understood.  Please try again."</literal></expr></init></decl>;</decl_stmt>
+
+    <function><type><specifier>private</specifier> <name>void</name></type> <name>good1</name><parameter_list>()</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name><name>IO</name><operator>.</operator><name>writeLine</name></name><argument_list>(<argument><expr><name>DEFAULT_ERROR</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+
+    <function><type><specifier>public</specifier> <name>void</name></type> <name>good</name><parameter_list>()</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name>good1</name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+
+    <function><type><specifier>public</specifier> <specifier>static</specifier> <name>void</name></type> <name>main</name><parameter_list>(<parameter><decl><type><name><name>String</name><index>[]</index></name></type> <name>args</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>ClassNotFoundException</name></expr></argument>, <argument><expr><name>InstantiationException</name></expr></argument>, <argument><expr><name>IllegalAccessException</name></expr></argument></throws> <block>{<block_content>
+        <expr_stmt><expr><call><name>mainFromParent</name><argument_list>(<argument><expr><name>args</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+}</block></class>
+
+</unit>

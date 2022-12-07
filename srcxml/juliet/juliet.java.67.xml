@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>testcases</name><operator>.</operator><name>CWE643_Xpath_Injection</name></name>;</package>
+
+<import>import <name><name>testcasesupport</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>xml</name><operator>.</operator><name>xpath</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>org</name><operator>.</operator><name>xml</name><operator>.</operator><name>sax</name><operator>.</operator><name>InputSource</name></name>;</import>
+<import>import <name><name>org</name><operator>.</operator><name>apache</name><operator>.</operator><name>commons</name><operator>.</operator><name>lang</name><operator>.</operator><name>StringEscapeUtils</name></name>;</import>
+
+<class><specifier>public</specifier> class <name>CWE643_Xpath_Injection__File_81_goodG2B</name> <super_list><extends>extends <super><name>CWE643_Xpath_Injection__File_81_base</name></super></extends></super_list> <block>{
+
+    <function><type><specifier>public</specifier> <name>void</name></type> <name>action</name><parameter_list>(<parameter><decl><type><name>String</name></type> <name>data</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>Throwable</name></expr></argument></throws> <block>{<block_content>
+        <decl_stmt><decl><type><name>String</name></type> <name>xmlFile</name> <init>= <expr><literal type="null">null</literal></expr></init></decl>;</decl_stmt>
+        <if_stmt><if>if <condition>(<expr><call><name><name>System</name><operator>.</operator><name>getProperty</name></name><argument_list>(<argument><expr><literal type="string">"os.name"</literal></expr></argument>)</argument_list></call><operator>.</operator><call><name>toLowerCase</name><argument_list>()</argument_list></call><operator>.</operator><call><name>indexOf</name><argument_list>(<argument><expr><literal type="string">"win"</literal></expr></argument>)</argument_list></call> <operator>&gt;=</operator> <literal type="number">0</literal></expr>)</condition> <block>{<block_content>
+            <expr_stmt><expr><name>xmlFile</name> <operator>=</operator> <literal type="string">"\src	estcases\CWE643_Xpath Injection\CWE643_Xpath_Injection__Helper.xml"</literal></expr>;</expr_stmt>
+        </block_content>}</block></if> <else>else <block>{<block_content>
+            <expr_stmt><expr><name>xmlFile</name> <operator>=</operator> <literal type="string">"./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml"</literal></expr>;</expr_stmt>
+        </block_content>}</block></else></if_stmt>
+        <if_stmt><if>if <condition>(<expr><name>data</name> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+            <decl_stmt><decl><type><name><name>String</name><index>[]</index></name></type> <name>tokens</name> <init>= <expr><call><name><name>data</name><operator>.</operator><name>split</name></name><argument_list>(<argument><expr><literal type="string">"||"</literal></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+            <if_stmt><if>if <condition>(<expr><name><name>tokens</name><operator>.</operator><name>length</name></name> <operator>&lt;</operator> <literal type="number">2</literal></expr>)</condition> <block>{<block_content>
+                <return>return;</return>
+            </block_content>}</block></if></if_stmt>
+            <decl_stmt><decl><type><name>String</name></type> <name>username</name> <init>= <expr><name><name>tokens</name><index>[<expr><literal type="number">0</literal></expr>]</index></name></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>String</name></type> <name>password</name> <init>= <expr><name><name>tokens</name><index>[<expr><literal type="number">1</literal></expr>]</index></name></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>XPath</name></type> <name>xPath</name> <init>= <expr><call><name><name>XPathFactory</name><operator>.</operator><name>newInstance</name></name><argument_list>()</argument_list></call><operator>.</operator><call><name>newXPath</name><argument_list>()</argument_list></call></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>InputSource</name></type> <name>inputXml</name> <init>= <expr><operator>new</operator> <call><name>InputSource</name><argument_list>(<argument><expr><name>xmlFile</name></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>String</name></type> <name>query</name> <init>= <expr><literal type="string">"//users/user[name/text()='"</literal> <operator>+</operator> <name>username</name> <operator>+</operator> <literal type="string">"' and pass/text()='"</literal> <operator>+</operator> <name>password</name> <operator>+</operator> <literal type="string">"']"</literal> <operator>+</operator> <literal type="string">"/secret/text()"</literal></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name>String</name></type> <name>secret</name> <init>= <expr><operator>(</operator><name>String</name><operator>)</operator> <call><name><name>xPath</name><operator>.</operator><name>evaluate</name></name><argument_list>(<argument><expr><name>query</name></expr></argument>, <argument><expr><name>inputXml</name></expr></argument>, <argument><expr><name><name>XPathConstants</name><operator>.</operator><name>STRING</name></name></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+        </block_content>}</block></if></if_stmt>
+    </block_content>}</block></function>
+}</block></class>
+
+</unit>

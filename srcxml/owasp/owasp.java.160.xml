@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java"><package>package <name><name>org</name><operator>.</operator><name>owasp</name><operator>.</operator><name>benchmark</name><operator>.</operator><name>testcode</name></name>;</package>
+
+<import>import <name><name>java</name><operator>.</operator><name>io</name><operator>.</operator><name>IOException</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>ServletException</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>annotation</name><operator>.</operator><name>WebServlet</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>HttpServlet</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>HttpServletRequest</name></name>;</import>
+<import>import <name><name>javax</name><operator>.</operator><name>servlet</name><operator>.</operator><name>http</name><operator>.</operator><name>HttpServletResponse</name></name>;</import>
+
+<class><annotation>@<name>WebServlet</name><argument_list>(<argument><expr><name>value</name> <operator>=</operator> <literal type="string">"/sqli-00/BenchmarkTest00193"</literal></expr></argument>)</argument_list></annotation>
+<specifier>public</specifier> class <name>BenchmarkTest00193</name> <super_list><extends>extends <super><name>HttpServlet</name></super></extends></super_list> <block>{
+
+    <decl_stmt><decl><type><specifier>private</specifier> <specifier>static</specifier> <specifier>final</specifier> <name>long</name></type> <name>serialVersionUID</name> <init>= <expr><literal type="number">1L</literal></expr></init></decl>;</decl_stmt>
+
+    <function><annotation>@<name>Override</name></annotation>
+    <type><specifier>public</specifier> <name>void</name></type> <name>doGet</name><parameter_list>(<parameter><decl><type><name>HttpServletRequest</name></type> <name>request</name></decl></parameter>, <parameter><decl><type><name>HttpServletResponse</name></type> <name>response</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>ServletException</name></expr></argument>, <argument><expr><name>IOException</name></expr></argument></throws> <block>{<block_content>
+        <expr_stmt><expr><call><name>doPost</name><argument_list>(<argument><expr><name>request</name></expr></argument>, <argument><expr><name>response</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+
+    <function><annotation>@<name>Override</name></annotation>
+    <type><specifier>public</specifier> <name>void</name></type> <name>doPost</name><parameter_list>(<parameter><decl><type><name>HttpServletRequest</name></type> <name>request</name></decl></parameter>, <parameter><decl><type><name>HttpServletResponse</name></type> <name>response</name></decl></parameter>)</parameter_list> <throws>throws <argument><expr><name>ServletException</name></expr></argument>, <argument><expr><name>IOException</name></expr></argument></throws> <block>{<block_content>
+        <expr_stmt><expr><call><name><name>response</name><operator>.</operator><name>setContentType</name></name><argument_list>(<argument><expr><literal type="string">"text/html;charset=UTF-8"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <decl_stmt><decl><type><name>String</name></type> <name>param</name> <init>= <expr><literal type="string">""</literal></expr></init></decl>;</decl_stmt>
+        <if_stmt><if>if <condition>(<expr><call><name><name>request</name><operator>.</operator><name>getHeader</name></name><argument_list>(<argument><expr><literal type="string">"BenchmarkTest00193"</literal></expr></argument>)</argument_list></call> <operator>!=</operator> <literal type="null">null</literal></expr>)</condition> <block>{<block_content>
+            <expr_stmt><expr><name>param</name> <operator>=</operator> <call><name><name>request</name><operator>.</operator><name>getHeader</name></name><argument_list>(<argument><expr><literal type="string">"BenchmarkTest00193"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        </block_content>}</block></if></if_stmt>
+        <expr_stmt><expr><name>param</name> <operator>=</operator> <call><name><name>java</name><operator>.</operator><name>net</name><operator>.</operator><name>URLDecoder</name><operator>.</operator><name>decode</name></name><argument_list>(<argument><expr><name>param</name></expr></argument>, <argument><expr><literal type="string">"UTF-8"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <decl_stmt><decl><type><name>String</name></type> <name>bar</name></decl>;</decl_stmt>
+        <decl_stmt><decl><type><name>int</name></type> <name>num</name> <init>= <expr><literal type="number">196</literal></expr></init></decl>;</decl_stmt>
+        <if_stmt><if>if <condition>(<expr><operator>(</operator><literal type="number">500</literal> <operator>/</operator> <literal type="number">42</literal><operator>)</operator> <operator>+</operator> <name>num</name> <operator>&gt;</operator> <literal type="number">200</literal></expr>)</condition><block type="pseudo"><block_content>
+            <expr_stmt><expr><name>bar</name> <operator>=</operator> <name>param</name></expr>;</expr_stmt></block_content></block></if>
+        <else>else<block type="pseudo"><block_content>
+            <expr_stmt><expr><name>bar</name> <operator>=</operator> <literal type="string">"This should never happen"</literal></expr>;</expr_stmt></block_content></block></else></if_stmt>
+        <decl_stmt><decl><type><name>String</name></type> <name>sql</name> <init>= <expr><literal type="string">"SELECT * from USERS where USERNAME=? and PASSWORD='"</literal> <operator>+</operator> <name>bar</name> <operator>+</operator> <literal type="string">"'"</literal></expr></init></decl>;</decl_stmt>
+        <try>try <block>{<block_content>
+            <decl_stmt><decl><type><name><name>java</name><operator>.</operator><name>sql</name><operator>.</operator><name>Connection</name></name></type> <name>connection</name> <init>= <expr><call><name><name>org</name><operator>.</operator><name>owasp</name><operator>.</operator><name>benchmark</name><operator>.</operator><name>helpers</name><operator>.</operator><name>DatabaseHelper</name><operator>.</operator><name>getSqlConnection</name></name><argument_list>()</argument_list></call></expr></init></decl>;</decl_stmt>
+            <decl_stmt><decl><type><name><name>java</name><operator>.</operator><name>sql</name><operator>.</operator><name>PreparedStatement</name></name></type> <name>statement</name> <init>= <expr><call><name><name>connection</name><operator>.</operator><name>prepareStatement</name></name><argument_list>(<argument><expr><name>sql</name></expr></argument>, <argument><expr><operator>new</operator> <name><name>String</name><index>[]</index></name> <block>{ <expr><literal type="string">"Column1"</literal></expr>, <expr><literal type="string">"Column2"</literal></expr> }</block></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+            <expr_stmt><expr><call><name><name>statement</name><operator>.</operator><name>setString</name></name><argument_list>(<argument><expr><literal type="number">1</literal></expr></argument>, <argument><expr><literal type="string">"foo"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+            <expr_stmt><expr><call><name><name>statement</name><operator>.</operator><name>execute</name></name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+            <expr_stmt><expr><call><name><name>org</name><operator>.</operator><name>owasp</name><operator>.</operator><name>benchmark</name><operator>.</operator><name>helpers</name><operator>.</operator><name>DatabaseHelper</name><operator>.</operator><name>printResults</name></name><argument_list>(<argument><expr><name>statement</name></expr></argument>, <argument><expr><name>sql</name></expr></argument>, <argument><expr><name>response</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        </block_content>}</block> <catch>catch <parameter_list>(<parameter><decl><type><name><name>java</name><operator>.</operator><name>sql</name><operator>.</operator><name>SQLException</name></name></type> <name>e</name></decl></parameter>)</parameter_list> <block>{<block_content>
+            <if_stmt><if>if <condition>(<expr><name><name>org</name><operator>.</operator><name>owasp</name><operator>.</operator><name>benchmark</name><operator>.</operator><name>helpers</name><operator>.</operator><name>DatabaseHelper</name><operator>.</operator><name>hideSQLErrors</name></name></expr>)</condition> <block>{<block_content>
+                <expr_stmt><expr><call><name><name>response</name><operator>.</operator><name>getWriter</name></name><argument_list>()</argument_list></call><operator>.</operator><call><name>println</name><argument_list>(<argument><expr><literal type="string">"Error processing request."</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+                <return>return;</return>
+            </block_content>}</block></if> <else>else<block type="pseudo"><block_content>
+                <throw>throw <expr><operator>new</operator> <call><name>ServletException</name><argument_list>(<argument><expr><name>e</name></expr></argument>)</argument_list></call></expr>;</throw></block_content></block></else></if_stmt>
+        </block_content>}</block></catch></try>
+    </block_content>}</block></function>
+}</block></class>
+
+</unit>
