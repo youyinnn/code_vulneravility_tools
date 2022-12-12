@@ -10,16 +10,6 @@
         ;
     </package>
 
-    <package>
-        package
-        <name>
-            <name>testcases2</name>
-            <operator>.</operator>
-            <name>CWE23_Relative_Path_Traversal</name>
-        </name>
-        ;
-    </package>
-
     <import>
         import
         <name>
@@ -29,4 +19,14 @@
         </name>
         ;
     </import>
+
+    <package>
+        package
+        <name>
+            <name>testcases</name>
+            <operator>.</operator>
+            <name>CWE23_Relative_Path_Traversal</name>
+        </name>
+        ;
+    </package>
 </unit>

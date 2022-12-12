@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="srcxml/juliet/juliet.java.0">
+    <comment type="block">/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE23_Relative_Path_Traversal__database_81_bad.java
+Label Definition File: CWE23_Relative_Path_Traversal.label.xml
+Template File: sources-sink-81_bad.tmpl.java
+*/</comment>
+    <comment type="block">/*
+ * @description
+ * CWE: 23 Relative Path Traversal
+ * BadSource: database Read data from a database
+ * GoodSource: A hardcoded string
+ * Sinks: readFile
+ *    BadSink : no validation
+ * Flow Variant: 81 Data flow: data passed in a parameter to an abstract method
+ *
+ * */</comment>
+
+    <package>
+        package
+        <name>
+            <name>testcases</name>
+            <operator>.</operator>
+            <name>CWE23_Relative_Path_Traversal</name>
+        </name>
+        ;
+    </package>
+
+    <import>
+        import
+        <name>
+            <name>testcasesupport</name>
+            <operator>.</operator>
+            <name>*</name>
+        </name>
+        ;
+    </import>
+
+    <import>
+        import
+        <name>
+            <name>java</name>
+            <operator>.</operator>
+            <name>io</name>
+            <operator>.</operator>
+            <name>*</name>
+        </name>
+        ;
+    </import>
+</unit>

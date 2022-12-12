@@ -2,3 +2,6 @@
 target
 
 .DS_Store
+
+srcxml/juliet_out
+srcxml/owasp_out
