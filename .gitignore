@@ -7,3 +7,6 @@ srcxml/juliet_*
 srcxml/owasp_*
 
 .vscode
+
+draper_xml_train_a.csv
+draper_xml_train_b.csv
